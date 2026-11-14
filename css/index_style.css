@@ -78,3 +78,5 @@
     transition: background .15s;
     text-align: center;
 }
+
+a:hover {background: #15307a;}
