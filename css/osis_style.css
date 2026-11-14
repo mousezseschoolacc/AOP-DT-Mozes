@@ -44,13 +44,13 @@ a {
   text-decoration: none;
 }
 
-.mackvs-container {
+.mackvscontainer {
   width: min(1120px, calc(100% - 40px));
   margin-inline: auto;
 }
 
 /* NAVBAR */
-.mackvs-site-header {
+.mackvssite-header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -58,7 +58,7 @@ a {
   box-shadow: 0 3px 18px rgba(20, 35, 80, 0.07);
 }
 
-.mackvs-navbar {
+.mackvsnavbar {
   min-height: 76px;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ a {
   gap: 24px;
 }
 
-.mackvs-brand {
+.mackvsbrand {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -76,7 +76,7 @@ a {
   line-height: 1.2;
 }
 
-.mackvs-brand small {
+.mackvsbrand small {
   display: block;
   margin-top: 4px;
   color: var(--muted);
@@ -84,31 +84,31 @@ a {
   font-weight: 600;
 }
 
-.mackvs-brand-logo {
+.mackvsbrand-logo {
   width: 44px;
   height: 44px;
   object-fit: contain;
 }
 
-.mackvs-nav-links {
+.mackvsnav-links {
   display: flex;
   align-items: center;
   gap: 30px;
   list-style: none;
 }
 
-.mackvs-nav-links a {
+.mackvsnav-links a {
   color: var(--text);
   font-size: 0.92rem;
   font-weight: 650;
   transition: color 0.2s ease;
 }
 
-.mackvs-nav-links a:hover {
+.mackvsnav-links a:hover {
   color: var(--blue);
 }
 
-.mackvs-nav-toggle {
+.mackvsnav-toggle {
   display: none;
   border: 0;
   background: transparent;
@@ -118,7 +118,7 @@ a {
 }
 
 /* HERO */
-.mackvs-hero {
+.mackvshero {
   position: relative;
   overflow: hidden;
   min-height: 530px;
@@ -128,13 +128,13 @@ a {
   background: var(--blue);
 }
 
-.mackvs-hero-content {
+.mackvshero-content {
   position: relative;
   z-index: 2;
   padding-block: 90px;
 }
 
-.mackvs-eyebrow {
+.mackvseyebrow {
   color: var(--blue);
   font-size: 0.78rem;
   font-weight: 800;
@@ -142,11 +142,11 @@ a {
   text-transform: uppercase;
 }
 
-.mackvs-hero .mackvs-eyebrow {
+.mackvshero .mackvseyebrow {
   color: var(--yellow);
 }
 
-.mackvs-hero h1 {
+.mackvshero h1 {
   max-width: 760px;
   margin: 16px 0;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -154,18 +154,18 @@ a {
   letter-spacing: -0.04em;
 }
 
-.mackvs-hero h1 span {
+.mackvshero h1 span {
   color: var(--yellow);
 }
 
-.mackvs-hero-description {
+.mackvshero-description {
   max-width: 560px;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 1.08rem;
 }
 
-.mackvs-button {
+.mackvsbutton {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -175,17 +175,17 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mackvs-button:hover {
+.mackvsbutton:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.mackvs-button-yellow {
+.mackvsbutton-yellow {
   color: var(--blue-dark);
   background: var(--yellow);
 }
 
-.mackvs-hero-decoration {
+.mackvshero-decoration {
   position: absolute;
   right: -130px;
   bottom: -220px;
@@ -195,7 +195,7 @@ a {
   border-radius: 50%;
 }
 
-.mackvs-section-blue .mackvs-hero-decoration {
+.mackvssection-blue .mackvshero-decoration {
   top: -220px;
   left: -220px;
   right: auto;
@@ -203,53 +203,53 @@ a {
   pointer-events: none;
 }
 
-.mackvs-section-blue .mackvs-container {
+.mackvssection-blue .mackvscontainer {
   position: relative;
   z-index: 2;
 }
 
 /* GENERAL SECTION */
-.mackvs-section {
+.mackvssection {
   padding-block: 90px;
 }
 
-.mackvs-section-blue {
+.mackvssection-blue {
   background-color: var(--blue);
   position: relative;
   overflow: hidden;
 }
 
-.mackvs-section-heading {
+.mackvssection-heading {
   max-width: 650px;
   margin: 0 auto 44px;
   text-align: center;
 }
 
-.mackvs-section-heading h2 {
+.mackvssection-heading h2 {
   margin: 8px 0 12px;
   color: var(--blue);
   font-size: clamp(2rem, 4vw, 2.8rem);
   letter-spacing: -0.035em;
 }
 
-.mackvs-section-heading>p:last-child {
+.mackvssection-heading>p:last-child {
   color: var(--muted);
 }
 
-.mackvs-section-heading-light h2 {
+.mackvssection-heading-light h2 {
   color: var(--white);
 }
 
-.mackvs-section-heading-light>p:last-child {
+.mackvssection-heading-light>p:last-child {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.mackvs-section-heading-light .mackvs-eyebrow {
+.mackvssection-heading-light .mackvseyebrow {
   color: var(--yellow);
 }
 
 /* VISION & MISSION */
-.mackvs-vision-card {
+.mackvsvision-card {
   padding: 38px;
   border-radius: var(--radius);
   color: var(--white);
@@ -258,7 +258,7 @@ a {
   box-shadow: var(--shadow);
 }
 
-.mackvs-card-label {
+.mackvscard-label {
   display: inline-block;
   margin-bottom: 12px;
   padding: 5px 50px;
@@ -270,15 +270,15 @@ a {
   letter-spacing: 0.1em;
 }
 
-.mackvs-vision-card h4 {
+.mackvsvision-card h4 {
   font-size: clamp(1.35rem, 1.2vw, 2rem);
 }
 
-.mackvs-vision-card p {
+.mackvsvision-card p {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.mackvs-mission-heading h2 {
+.mackvsmission-heading h2 {
   margin: 22px 0 0;
   color: var(--blue);
   font-size: 1.7rem;
@@ -286,14 +286,14 @@ a {
   text-align: center;
 }
 
-.mackvs-mission-grid {
+.mackvsmission-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 22px;
 }
 
-.mackvs-mission-card {
+.mackvsmission-card {
   padding: 26px;
   border: 1px solid #e7ebf7;
   border-radius: var(--radius);
@@ -301,24 +301,24 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mackvs-mission-card:hover {
+.mackvsmission-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow);
 }
 
-.mackvs-mission-number {
+.mackvsmission-number {
   display: inline-block;
   color: var(--blue);
   font-size: 2rem;
   font-weight: 900;
 }
 
-.mackvs-mission-card h3 {
+.mackvsmission-card h3 {
   margin-bottom: 8px;
   color: var(--blue);
 }
 
-.mackvs-mission-card p {
+.mackvsmission-card p {
   color: var(--muted);
 }
 
@@ -326,7 +326,7 @@ a {
    OSIS ADVISORS
    ============================== */
 
-.mackvs-advisor-card {
+.mackvsadvisor-card {
   width: min(400px, 100%);
   margin: 0 auto 24px;
   padding: 28px;
@@ -336,7 +336,7 @@ a {
   text-align: center;
 }
 
-.mackvs-advisor-card h3 {
+.mackvsadvisor-card h3 {
   margin-bottom: 22px;
   padding-bottom: 12px;
   border-bottom: 3px solid var(--yellow);
@@ -344,18 +344,18 @@ a {
   font-size: 1.2rem;
 }
 
-.mackvs-advisor-members {
+.mackvsadvisor-members {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.mackvs-advisor-member {
+.mackvsadvisor-member {
   min-width: 0;
   text-align: center;
 }
 
-.mackvs-advisor-member img {
+.mackvsadvisor-member img {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
@@ -365,7 +365,7 @@ a {
   background: var(--soft-blue);
 }
 
-.mackvs-advisor-member p {
+.mackvsadvisor-member p {
   margin-top: 9px;
   color: var(--text);
   font-size: 0.9rem;
@@ -378,7 +378,7 @@ a {
    LEADERSHIP
    ============================== */
 
-.mackvs-leadership-grid {
+.mackvsleadership-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -386,7 +386,7 @@ a {
   margin: 0 auto 24px;
 }
 
-.mackvs-leader-card {
+.mackvsleader-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,11 +400,11 @@ a {
   transition: transform 0.2s ease;
 }
 
-.mackvs-leader-card:hover {
+.mackvsleader-card:hover {
   transform: translateY(-5px);
 }
 
-.mackvs-leader-card img {
+.mackvsleader-card img {
   width: 45%;
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
@@ -413,7 +413,7 @@ a {
   background: var(--soft-blue);
 }
 
-.mackvs-leader-info span {
+.mackvsleader-info span {
   text-transform: uppercase;
   margin: 10px auto 5px;
   font-size: 0.7rem;
@@ -423,13 +423,13 @@ a {
   line-height: 1.2em;
 }
 
-.mackvs-leader-info h3 {
+.mackvsleader-info h3 {
   margin: 5px 0;
   color: var(--text);
   font-size: 1.1rem;
 }
 
-.mackvs-leader-info p {
+.mackvsleader-info p {
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -439,18 +439,18 @@ a {
    DIVISION CARDS
    ============================== */
 
-.mackvs-division-grid {
+.mackvsdivision-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 24px;
 }
 
-.mackvs-division-grid.mackvs-small {
+.mackvsdivision-grid.mackvssmall {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.mackvs-division-card {
+.mackvsdivision-card {
   padding: 28px;
   border-radius: 24px;
   background: var(--white);
@@ -459,19 +459,19 @@ a {
     box-shadow 0.2s ease;
 }
 
-.mackvs-division-card:hover {
+.mackvsdivision-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
 }
 
-.mackvs-division-card h3 {
+.mackvsdivision-card h3 {
   color: var(--blue);
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 3px;
 }
 
-.mackvs-division-description {
+.mackvsdivision-description {
   color: var(--muted);
   border-bottom: 3px solid var(--yellow);
   text-align: center;
@@ -485,22 +485,22 @@ a {
    DIVISION MEMBER GALLERY
    ============================== */
 
-.mackvs-division-members {
+.mackvsdivision-members {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 14px;
 }
 
-.mackvs-division-members.mackvs-small {
+.mackvsdivision-members.mackvssmall {
   grid-template-columns: repeat(2, 1fr);
   }
 
-.mackvs-division-member {
+.mackvsdivision-member {
   min-width: 0;
   text-align: center;
 }
 
-.mackvs-division-member img {
+.mackvsdivision-member img {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 14px;
@@ -509,15 +509,15 @@ a {
   transition: transform 0.25s ease;
 }
 
-.mackvs-leader-card img, .mackvs-advisor-member img, .mackvs-former-member img {
+.mackvsleader-card img, .mackvsadvisor-member img, .mackvsformer-member img {
   transition: transform 0.25s ease;
 }
 
-.mackvs-division-member img:hover, .mackvs-leader-card img:hover, .mackvs-advisor-member img:hover, .mackvs-former-member img:hover {
+.mackvsdivision-member img:hover, .mackvsleader-card img:hover, .mackvsadvisor-member img:hover, .mackvsformer-member img:hover {
   transform: scale(1.05);
 }
 
-.mackvs-division-member .mackvs-member {
+.mackvsdivision-member .mackvsmember {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -530,7 +530,7 @@ a {
   letter-spacing: 0.08em;
 }
 
-.mackvs-division-member .mackvs-leader {
+.mackvsdivision-member .mackvsleader {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -543,7 +543,7 @@ a {
   background: var(--yellow);
 }
 
-.mackvs-division-member p {
+.mackvsdivision-member p {
   margin-top: 0;
   color: var(--text);
   font-size: 0.9rem;
@@ -555,7 +555,7 @@ a {
    FORMER MEMBER
    ============================== */
 
-.mackvs-former-member-card {
+.mackvsformer-member-card {
   width: min(300px, 100%);
   margin: 0 auto 40px;
   padding: 28px;
@@ -565,24 +565,24 @@ a {
   text-align: center;
 }
 
-.mackvs-former-member-card h3 {
+.mackvsformer-member-card h3 {
   margin-bottom: 3px;
   color: var(--blue);
   font-size: 1.2rem;
 }
 
-.mackvs-former-member-members {
+.mackvsformer-member-members {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.mackvs-former-member {
+.mackvsformer-member {
   min-width: 0;
   text-align: center;
 }
 
-.mackvs-former-member img {
+.mackvsformer-member img {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
@@ -592,7 +592,7 @@ a {
   background: var(--soft-blue);
 }
 
-.mackvs-former-member .mackvs-member-role {
+.mackvsformer-member .mackvsmember-role {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -605,7 +605,7 @@ a {
   letter-spacing: 0.08em;
 }
 
-.mackvs-former-member p {
+.mackvsformer-member p {
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 700;
@@ -617,64 +617,64 @@ a {
    ============================== */
 
 @media (max-width: 900px) {
-  .mackvs-leadership-grid {
+  .mackvsleadership-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .mackvs-division-members {
+  .mackvsdivision-members {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .mackvs-leadership-grid {
+  .mackvsleadership-grid {
     grid-template-columns: 1fr;
     gap: 14px;
     margin-bottom: 32px;
   }
 
-  .mackvs-leader-card {
+  .mackvsleader-card {
     padding: 16px;
   }
 
-  .mackvs-leader-card img {
+  .mackvsleader-card img {
     width: 90px;
     height: 90px;
   }
 
-  .mackvs-division-grid {
+  .mackvsdivision-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .mackvs-division-card {
+  .mackvsdivision-card {
     padding: 22px;
   }
 
-  .mackvs-division-members {
+  .mackvsdivision-members {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .mackvs-division-members.mackvs-small {
+  .mackvsdivision-members.mackvssmall {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* GALLERY */
-.mackvs-gallery-grid {
+.mackvsgallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.mackvs-gallery-item {
+.mackvsgallery-item {
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--white);
   box-shadow: var(--shadow);
 }
 
-.mackvs-gallery-item img {
+.mackvsgallery-item img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -682,83 +682,83 @@ a {
   transition: transform 0.35s ease;
 }
 
-.mackvs-gallery-item:hover img {
+.mackvsgallery-item:hover img {
   transform: scale(1.04);
 }
 
-.mackvs-gallery-item figcaption {
+.mackvsgallery-item figcaption {
   display: flex;
   flex-direction: column;
   gap: 3px;
   padding: 16px 18px;
 }
 
-.mackvs-gallery-item figcaption span {
+.mackvsgallery-item figcaption span {
   color: var(--blue);
   font-weight: 800;
 }
 
-.mackvs-gallery-item figcaption small {
+.mackvsgallery-item figcaption small {
   color: var(--muted);
 }
 
 /* FOOTER */
-.mackvs-site-footer {
+.mackvssite-footer {
   padding-block: 36px;
   color: var(--white);
   background: var(--blue-dark);
 }
 
-.mackvs-footer-content {
+.mackvsfooter-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-.mackvs-site-footer h2 {
+.mackvssite-footer h2 {
   color: var(--yellow);
   font-size: 1.1rem;
 }
 
-.mackvs-site-footer p {
+.mackvssite-footer p {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.9rem;
 }
 
-.mackvs-copyright {
+.mackvscopyright {
   text-align: right;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .mackvs-members-grid {
+  .mackvsmembers-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .mackvs-gallery-grid {
+  .mackvsgallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .mackvs-mission-grid {
+  .mackvsmission-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 640px) {
-  .mackvs-container {
+  .mackvscontainer {
     width: min(100% - 28px, 1120px);
   }
 
-  .mackvs-navbar {
+  .mackvsnavbar {
     min-height: 68px;
   }
 
-  .mackvs-nav-toggle {
+  .mackvsnav-toggle {
     display: block;
   }
 
-  .mackvs-nav-links {
+  .mackvsnav-links {
     position: absolute;
     top: 68px;
     left: 0;
@@ -772,51 +772,51 @@ a {
     box-shadow: 0 12px 18px rgba(20, 35, 80, 0.08);
   }
 
-  .mackvs-nav-links.mackvs-open {
+  .mackvsnav-links.mackvsopen {
     display: flex;
   }
 
-  .mackvs-nav-links a {
+  .mackvsnav-links a {
     display: block;
     padding: 12px 4px;
   }
 
-  .mackvs-hero {
+  .mackvshero {
     min-height: 470px;
   }
 
-  .mackvs-hero-content {
+  .mackvshero-content {
     padding-block: 70px;
   }
 
-  .mackvs-hero-decoration {
+  .mackvshero-decoration {
     right: -260px;
     bottom: -280px;
   }
 
-  .mackvs-section {
+  .mackvssection {
     padding-block: 64px;
   }
 
-  .mackvs-vision-card {
+  .mackvsvision-card {
     padding: 28px 20px;
   }
 
-  .mackvs-members-grid,
-  .mackvs-gallery-grid {
+  .mackvsmembers-grid,
+  .mackvsgallery-grid {
     grid-template-columns: 1fr;
   }
 
-  .mackvs-member-photo {
+  .mackvsmember-photo {
     aspect-ratio: 5 / 4;
   }
 
-  .mackvs-footer-content {
+  .mackvsfooter-content {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .mackvs-copyright {
+  .mackvscopyright {
     text-align: left;
   }
 }
