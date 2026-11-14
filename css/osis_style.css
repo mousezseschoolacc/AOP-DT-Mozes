@@ -1,9 +1,3 @@
-/* ==============================
-   OSIS WEBSITE — EXTERNAL CSS
-   Color palette:
-   Yellow #ffcb0c | Blue #21409a | White #ffffff
-   ============================== */
-
 :root {
   --yellow: #ffcb0c;
   --blue: #21409a;
@@ -49,7 +43,6 @@ a {
   margin-inline: auto;
 }
 
-/* NAVBAR */
 .mackvssite-header {
   position: sticky;
   top: 0;
@@ -117,7 +110,6 @@ a {
   cursor: pointer;
 }
 
-/* HERO */
 .mackvshero {
   position: relative;
   overflow: hidden;
@@ -208,7 +200,6 @@ a {
   z-index: 2;
 }
 
-/* GENERAL SECTION */
 .mackvssection {
   padding-block: 90px;
 }
@@ -248,7 +239,6 @@ a {
   color: var(--yellow);
 }
 
-/* VISION & MISSION */
 .mackvsvision-card {
   padding: 38px;
   border-radius: var(--radius);
@@ -322,10 +312,6 @@ a {
   color: var(--muted);
 }
 
-/* ==============================
-   OSIS ADVISORS
-   ============================== */
-
 .mackvsadvisor-card {
   width: min(400px, 100%);
   margin: 0 auto 24px;
@@ -372,11 +358,6 @@ a {
   font-weight: 700;
   overflow-wrap: anywhere;
 }
-
-
-/* ==============================
-   LEADERSHIP
-   ============================== */
 
 .mackvsleadership-grid {
   display: grid;
@@ -434,11 +415,6 @@ a {
   font-size: 0.9rem;
 }
 
-
-/* ==============================
-   DIVISION CARDS
-   ============================== */
-
 .mackvsdivision-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -479,11 +455,6 @@ a {
   padding-bottom: 14px; 
   font-size: 0.9rem;
 }
-
-
-/* ==============================
-   DIVISION MEMBER GALLERY
-   ============================== */
 
 .mackvsdivision-members {
   display: grid;
@@ -551,10 +522,6 @@ a {
   overflow-wrap: anywhere;
 }
 
-/* ==============================
-   FORMER MEMBER
-   ============================== */
-
 .mackvsformer-member-card {
   width: min(300px, 100%);
   margin: 0 auto 40px;
@@ -612,10 +579,6 @@ a {
   overflow-wrap: anywhere;
 }
 
-/* ==============================
-   RESPONSIVE DESIGN
-   ============================== */
-
 @media (max-width: 900px) {
   .mackvsleadership-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -660,7 +623,6 @@ a {
   }
 }
 
-/* GALLERY */
 .mackvsgallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -702,7 +664,6 @@ a {
   color: var(--muted);
 }
 
-/* FOOTER */
 .mackvssite-footer {
   padding-block: 36px;
   color: var(--white);
@@ -730,7 +691,6 @@ a {
   text-align: right;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .mackvsmembers-grid {
     grid-template-columns: repeat(2, 1fr);
