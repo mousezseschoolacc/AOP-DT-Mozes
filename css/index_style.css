@@ -65,7 +65,7 @@
   .msg{min-height:1.2em;margin-top:12px;text-align:center;font-size:.88rem;color:#b3261e}
 
   a.login {
-    display: inline-flex;
+    display: inline-block;
     width: 100%;
     padding: 12px;
     font-size: 1rem;
