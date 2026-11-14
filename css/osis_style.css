@@ -44,13 +44,13 @@ a {
   text-decoration: none;
 }
 
-.container {
+.mackvs-container {
   width: min(1120px, calc(100% - 40px));
   margin-inline: auto;
 }
 
 /* NAVBAR */
-.site-header {
+.mackvs-site-header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -58,7 +58,7 @@ a {
   box-shadow: 0 3px 18px rgba(20, 35, 80, 0.07);
 }
 
-.navbar {
+.mackvs-navbar {
   min-height: 76px;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@ a {
   gap: 24px;
 }
 
-.brand {
+.mackvs-brand {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -76,7 +76,7 @@ a {
   line-height: 1.2;
 }
 
-.brand small {
+.mackvs-brand small {
   display: block;
   margin-top: 4px;
   color: var(--muted);
@@ -84,31 +84,31 @@ a {
   font-weight: 600;
 }
 
-.brand-logo {
+.mackvs-brand-logo {
   width: 44px;
   height: 44px;
   object-fit: contain;
 }
 
-.nav-links {
+.mackvs-nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
   list-style: none;
 }
 
-.nav-links a {
+.mackvs-nav-links a {
   color: var(--text);
   font-size: 0.92rem;
   font-weight: 650;
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+.mackvs-nav-links a:hover {
   color: var(--blue);
 }
 
-.nav-toggle {
+.mackvs-nav-toggle {
   display: none;
   border: 0;
   background: transparent;
@@ -118,7 +118,7 @@ a {
 }
 
 /* HERO */
-.hero {
+.mackvs-hero {
   position: relative;
   overflow: hidden;
   min-height: 530px;
@@ -128,13 +128,13 @@ a {
   background: var(--blue);
 }
 
-.hero-content {
+.mackvs-hero-content {
   position: relative;
   z-index: 2;
   padding-block: 90px;
 }
 
-.eyebrow {
+.mackvs-eyebrow {
   color: var(--blue);
   font-size: 0.78rem;
   font-weight: 800;
@@ -142,11 +142,11 @@ a {
   text-transform: uppercase;
 }
 
-.hero .eyebrow {
+.mackvs-hero .mackvs-eyebrow {
   color: var(--yellow);
 }
 
-.hero h1 {
+.mackvs-hero h1 {
   max-width: 760px;
   margin: 16px 0;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -154,18 +154,18 @@ a {
   letter-spacing: -0.04em;
 }
 
-.hero h1 span {
+.mackvs-hero h1 span {
   color: var(--yellow);
 }
 
-.hero-description {
+.mackvs-hero-description {
   max-width: 560px;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 1.08rem;
 }
 
-.button {
+.mackvs-button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -175,17 +175,17 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.button:hover {
+.mackvs-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.button-yellow {
+.mackvs-button-yellow {
   color: var(--blue-dark);
   background: var(--yellow);
 }
 
-.hero-decoration {
+.mackvs-hero-decoration {
   position: absolute;
   right: -130px;
   bottom: -220px;
@@ -195,7 +195,7 @@ a {
   border-radius: 50%;
 }
 
-.section-blue .hero-decoration {
+.mackvs-section-blue .mackvs-hero-decoration {
   top: -220px;
   left: -220px;
   right: auto;
@@ -203,53 +203,53 @@ a {
   pointer-events: none;
 }
 
-.section-blue .container {
+.mackvs-section-blue .mackvs-container {
   position: relative;
   z-index: 2;
 }
 
 /* GENERAL SECTION */
-.section {
+.mackvs-section {
   padding-block: 90px;
 }
 
-.section-blue {
+.mackvs-section-blue {
   background-color: var(--blue);
   position: relative;
   overflow: hidden;
 }
 
-.section-heading {
+.mackvs-section-heading {
   max-width: 650px;
   margin: 0 auto 44px;
   text-align: center;
 }
 
-.section-heading h2 {
+.mackvs-section-heading h2 {
   margin: 8px 0 12px;
   color: var(--blue);
   font-size: clamp(2rem, 4vw, 2.8rem);
   letter-spacing: -0.035em;
 }
 
-.section-heading>p:last-child {
+.mackvs-section-heading>p:last-child {
   color: var(--muted);
 }
 
-.section-heading-light h2 {
+.mackvs-section-heading-light h2 {
   color: var(--white);
 }
 
-.section-heading-light>p:last-child {
+.mackvs-section-heading-light>p:last-child {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.section-heading-light .eyebrow {
+.mackvs-section-heading-light .mackvs-eyebrow {
   color: var(--yellow);
 }
 
 /* VISION & MISSION */
-.vision-card {
+.mackvs-vision-card {
   padding: 38px;
   border-radius: var(--radius);
   color: var(--white);
@@ -258,7 +258,7 @@ a {
   box-shadow: var(--shadow);
 }
 
-.card-label {
+.mackvs-card-label {
   display: inline-block;
   margin-bottom: 12px;
   padding: 5px 50px;
@@ -270,15 +270,15 @@ a {
   letter-spacing: 0.1em;
 }
 
-.vision-card h4 {
+.mackvs-vision-card h4 {
   font-size: clamp(1.35rem, 1.2vw, 2rem);
 }
 
-.vision-card p {
+.mackvs-vision-card p {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.mission-heading h2 {
+.mackvs-mission-heading h2 {
   margin: 22px 0 0;
   color: var(--blue);
   font-size: 1.7rem;
@@ -286,14 +286,14 @@ a {
   text-align: center;
 }
 
-.mission-grid {
+.mackvs-mission-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 22px;
 }
 
-.mission-card {
+.mackvs-mission-card {
   padding: 26px;
   border: 1px solid #e7ebf7;
   border-radius: var(--radius);
@@ -301,24 +301,24 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mission-card:hover {
+.mackvs-mission-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow);
 }
 
-.mission-number {
+.mackvs-mission-number {
   display: inline-block;
   color: var(--blue);
   font-size: 2rem;
   font-weight: 900;
 }
 
-.mission-card h3 {
+.mackvs-mission-card h3 {
   margin-bottom: 8px;
   color: var(--blue);
 }
 
-.mission-card p {
+.mackvs-mission-card p {
   color: var(--muted);
 }
 
@@ -326,7 +326,7 @@ a {
    OSIS ADVISORS
    ============================== */
 
-.advisor-card {
+.mackvs-advisor-card {
   width: min(400px, 100%);
   margin: 0 auto 24px;
   padding: 28px;
@@ -336,7 +336,7 @@ a {
   text-align: center;
 }
 
-.advisor-card h3 {
+.mackvs-advisor-card h3 {
   margin-bottom: 22px;
   padding-bottom: 12px;
   border-bottom: 3px solid var(--yellow);
@@ -344,18 +344,18 @@ a {
   font-size: 1.2rem;
 }
 
-.advisor-members {
+.mackvs-advisor-members {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.advisor-member {
+.mackvs-advisor-member {
   min-width: 0;
   text-align: center;
 }
 
-.advisor-member img {
+.mackvs-advisor-member img {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
@@ -365,7 +365,7 @@ a {
   background: var(--soft-blue);
 }
 
-.advisor-member p {
+.mackvs-advisor-member p {
   margin-top: 9px;
   color: var(--text);
   font-size: 0.9rem;
@@ -378,7 +378,7 @@ a {
    LEADERSHIP
    ============================== */
 
-.leadership-grid {
+.mackvs-leadership-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -386,7 +386,7 @@ a {
   margin: 0 auto 24px;
 }
 
-.leader-card {
+.mackvs-leader-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,11 +400,11 @@ a {
   transition: transform 0.2s ease;
 }
 
-.leader-card:hover {
+.mackvs-leader-card:hover {
   transform: translateY(-5px);
 }
 
-.leader-card img {
+.mackvs-leader-card img {
   width: 45%;
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
@@ -413,7 +413,7 @@ a {
   background: var(--soft-blue);
 }
 
-.leader-info span {
+.mackvs-leader-info span {
   text-transform: uppercase;
   margin: 10px auto 5px;
   font-size: 0.7rem;
@@ -423,13 +423,13 @@ a {
   line-height: 1.2em;
 }
 
-s .leader-info h3 {
+.mackvs-leader-info h3 {
   margin: 5px 0;
   color: var(--text);
   font-size: 1.1rem;
 }
 
-.leader-info p {
+.mackvs-leader-info p {
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -439,18 +439,18 @@ s .leader-info h3 {
    DIVISION CARDS
    ============================== */
 
-.division-grid {
+.mackvs-division-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 24px;
 }
 
-.division-grid.small {
+.mackvs-division-grid.mackvs-small {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.division-card {
+.mackvs-division-card {
   padding: 28px;
   border-radius: 24px;
   background: var(--white);
@@ -459,19 +459,19 @@ s .leader-info h3 {
     box-shadow 0.2s ease;
 }
 
-.division-card:hover {
+.mackvs-division-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
 }
 
-.division-card h3 {
+.mackvs-division-card h3 {
   color: var(--blue);
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 3px;
 }
 
-.division-description {
+.mackvs-division-description {
   color: var(--muted);
   border-bottom: 3px solid var(--yellow);
   text-align: center;
@@ -485,22 +485,22 @@ s .leader-info h3 {
    DIVISION MEMBER GALLERY
    ============================== */
 
-.division-members {
+.mackvs-division-members {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 14px;
 }
 
-.division-members.small {
+.mackvs-division-members.mackvs-small {
   grid-template-columns: repeat(2, 1fr);
   }
 
-.division-member {
+.mackvs-division-member {
   min-width: 0;
   text-align: center;
 }
 
-.division-member img {
+.mackvs-division-member img {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 14px;
@@ -509,15 +509,15 @@ s .leader-info h3 {
   transition: transform 0.25s ease;
 }
 
-.leader-card img, .advisor-member img, .former-member img {
+.mackvs-leader-card img, .mackvs-advisor-member img, .mackvs-former-member img {
   transition: transform 0.25s ease;
 }
 
-.division-member img:hover, .leader-card img:hover, .advisor-member img:hover, .former-member img:hover {
+.mackvs-division-member img:hover, .mackvs-leader-card img:hover, .mackvs-advisor-member img:hover, .mackvs-former-member img:hover {
   transform: scale(1.05);
 }
 
-.division-member .member {
+.mackvs-division-member .mackvs-member {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -530,7 +530,7 @@ s .leader-info h3 {
   letter-spacing: 0.08em;
 }
 
-.division-member .leader {
+.mackvs-division-member .mackvs-leader {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -543,7 +543,7 @@ s .leader-info h3 {
   background: var(--yellow);
 }
 
-.division-member p {
+.mackvs-division-member p {
   margin-top: 0;
   color: var(--text);
   font-size: 0.9rem;
@@ -555,7 +555,7 @@ s .leader-info h3 {
    FORMER MEMBER
    ============================== */
 
-.former-member-card {
+.mackvs-former-member-card {
   width: min(300px, 100%);
   margin: 0 auto 40px;
   padding: 28px;
@@ -565,24 +565,24 @@ s .leader-info h3 {
   text-align: center;
 }
 
-.former-member-card h3 {
+.mackvs-former-member-card h3 {
   margin-bottom: 3px;
   color: var(--blue);
   font-size: 1.2rem;
 }
 
-.former-member-members {
+.mackvs-former-member-members {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.former-member {
+.mackvs-former-member {
   min-width: 0;
   text-align: center;
 }
 
-.former-member img {
+.mackvs-former-member img {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
@@ -592,7 +592,7 @@ s .leader-info h3 {
   background: var(--soft-blue);
 }
 
-.former-member .member-role {
+.mackvs-former-member .mackvs-member-role {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -605,7 +605,7 @@ s .leader-info h3 {
   letter-spacing: 0.08em;
 }
 
-.former-member p {
+.mackvs-former-member p {
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 700;
@@ -617,64 +617,64 @@ s .leader-info h3 {
    ============================== */
 
 @media (max-width: 900px) {
-  .leadership-grid {
+  .mackvs-leadership-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .division-members {
+  .mackvs-division-members {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .leadership-grid {
+  .mackvs-leadership-grid {
     grid-template-columns: 1fr;
     gap: 14px;
     margin-bottom: 32px;
   }
 
-  .leader-card {
+  .mackvs-leader-card {
     padding: 16px;
   }
 
-  .leader-card img {
+  .mackvs-leader-card img {
     width: 90px;
     height: 90px;
   }
 
-  .division-grid {
+  .mackvs-division-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .division-card {
+  .mackvs-division-card {
     padding: 22px;
   }
 
-  .division-members {
+  .mackvs-division-members {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .division-members.small {
+  .mackvs-division-members.mackvs-small {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* GALLERY */
-.gallery-grid {
+.mackvs-gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.gallery-item {
+.mackvs-gallery-item {
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--white);
   box-shadow: var(--shadow);
 }
 
-.gallery-item img {
+.mackvs-gallery-item img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -682,83 +682,83 @@ s .leader-info h3 {
   transition: transform 0.35s ease;
 }
 
-.gallery-item:hover img {
+.mackvs-gallery-item:hover img {
   transform: scale(1.04);
 }
 
-.gallery-item figcaption {
+.mackvs-gallery-item figcaption {
   display: flex;
   flex-direction: column;
   gap: 3px;
   padding: 16px 18px;
 }
 
-.gallery-item figcaption span {
+.mackvs-gallery-item figcaption span {
   color: var(--blue);
   font-weight: 800;
 }
 
-.gallery-item figcaption small {
+.mackvs-gallery-item figcaption small {
   color: var(--muted);
 }
 
 /* FOOTER */
-.site-footer {
+.mackvs-site-footer {
   padding-block: 36px;
   color: var(--white);
   background: var(--blue-dark);
 }
 
-.footer-content {
+.mackvs-footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-.site-footer h2 {
+.mackvs-site-footer h2 {
   color: var(--yellow);
   font-size: 1.1rem;
 }
 
-.site-footer p {
+.mackvs-site-footer p {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.9rem;
 }
 
-.copyright {
+.mackvs-copyright {
   text-align: right;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .members-grid {
+  .mackvs-members-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .gallery-grid {
+  .mackvs-gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .mission-grid {
+  .mackvs-mission-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 640px) {
-  .container {
+  .mackvs-container {
     width: min(100% - 28px, 1120px);
   }
 
-  .navbar {
+  .mackvs-navbar {
     min-height: 68px;
   }
 
-  .nav-toggle {
+  .mackvs-nav-toggle {
     display: block;
   }
 
-  .nav-links {
+  .mackvs-nav-links {
     position: absolute;
     top: 68px;
     left: 0;
@@ -772,51 +772,51 @@ s .leader-info h3 {
     box-shadow: 0 12px 18px rgba(20, 35, 80, 0.08);
   }
 
-  .nav-links.open {
+  .mackvs-nav-links.mackvs-open {
     display: flex;
   }
 
-  .nav-links a {
+  .mackvs-nav-links a {
     display: block;
     padding: 12px 4px;
   }
 
-  .hero {
+  .mackvs-hero {
     min-height: 470px;
   }
 
-  .hero-content {
+  .mackvs-hero-content {
     padding-block: 70px;
   }
 
-  .hero-decoration {
+  .mackvs-hero-decoration {
     right: -260px;
     bottom: -280px;
   }
 
-  .section {
+  .mackvs-section {
     padding-block: 64px;
   }
 
-  .vision-card {
+  .mackvs-vision-card {
     padding: 28px 20px;
   }
 
-  .members-grid,
-  .gallery-grid {
+  .mackvs-members-grid,
+  .mackvs-gallery-grid {
     grid-template-columns: 1fr;
   }
 
-  .member-photo {
+  .mackvs-member-photo {
     aspect-ratio: 5 / 4;
   }
 
-  .footer-content {
+  .mackvs-footer-content {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .copyright {
+  .mackvs-copyright {
     text-align: left;
   }
 }
