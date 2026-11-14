@@ -1,0 +1,63 @@
+
+  :root{
+    --sky:#87CEEB;
+    --white:#ffffff;
+    --navy:#1c3a8a;
+    --gold:#f2b705;
+    --text:#1f2a44;
+    --muted:#5b6784;
+    --line:#cfd8ea;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{min-height:100%;background:linear-gradient(to bottom,var(--sky) 0%,var(--white) 100%) no-repeat;background-attachment:fixed}
+  body{
+    min-height:100vh;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px;
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+    color:var(--text);
+    background:transparent;
+  }
+  .card{
+    width:100%;max-width:400px;
+    background:var(--white);
+    border-radius:16px;
+    padding:32px 32px 28px;
+    box-shadow:0 12px 32px rgba(28,58,138,.18);
+    border-top:5px solid var(--gold);
+  }
+  .logo{display:block;width:112px;height:112px;object-fit:contain;margin:0 auto 14px}
+  h1{font-size:1.4rem;text-align:center;color:var(--navy);font-weight:700}
+  .sub{text-align:center;color:var(--muted);font-size:.92rem;margin:4px 0 24px}
+  label{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px}
+  .field{margin-bottom:16px}
+  input[type=text],input[type=password]{
+    width:100%;padding:11px 12px;font-size:1rem;
+    border:1px solid var(--line);border-radius:8px;color:var(--text);background:#fff;
+  }
+  input:focus{outline:3px solid rgba(242,183,5,.45);border-color:var(--gold)}
+  .pw{position:relative}
+  .pw input{padding-right:64px}
+  .toggle{
+    position:absolute;right:6px;top:50%;transform:translateY(-50%);
+    border:0;background:none;color:var(--navy);font-weight:600;font-size:.85rem;
+    padding:6px 8px;cursor:pointer;border-radius:6px;
+  }
+  .toggle:focus-visible{outline:3px solid rgba(242,183,5,.45)}
+  .row{display:flex;justify-content:space-between;align-items:center;font-size:.88rem;margin:4px 0 20px}
+  .row label{display:flex;align-items:center;gap:6px;font-weight:400;margin:0}
+  .row a{color:var(--navy);text-decoration:none}
+  .row a:hover{text-decoration:underline}
+  button.login{
+    width:100%;padding:12px;font-size:1rem;font-weight:700;
+    background:var(--navy);color:#fff;border:0;border-radius:8px;cursor:pointer;
+    transition:background .15s;
+  }
+  button.login:hover{background:#15307a}
+  button.login:focus-visible{outline:3px solid rgba(242,183,5,.6);outline-offset:2px}
+  .msg{min-height:1.2em;margin-top:12px;text-align:center;font-size:.88rem;color:#b3261e}
+
+  a {
+    text-decoration: none;
+    color: white;
+}
