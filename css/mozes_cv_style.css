@@ -468,11 +468,49 @@ a:hover, a:focus {
     padding-inline: 12px;
   }
 
-  .mackvswork-placeholder {
-    min-height: 100px;
-  }
+.mackvswork-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  overflow: hidden;
+  border: 1.5px solid rgb(235 184 136 / 55%);
+}
+
+.mackvswork-placeholder img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.mackvswork-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
   .mackvshero {
     padding: 20px;
   }
+}
+
+.mackvswork-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+  align-items: start !important;
+}
+
+.mackvswork-placeholder {
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  border: 1.5px solid rgb(235 184 136 / 55%);
+}
+
+.mackvswork-placeholder img {
+  display: block !important;
+  width: 100% !important;
+  height: 90px !important;
+  object-fit: contain !important;
 }
