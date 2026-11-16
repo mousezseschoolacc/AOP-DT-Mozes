@@ -28,14 +28,41 @@
 
   <main>
     <section class="mackvshero" id="beranda">
-      <div class="mackvscontainer mackvshero-content">
-        <p class="mackvseyebrow">Organisasi Siswa Intra Sekolah</p>
-        <h1>Bersama Membangun<br><span>Generasi Berprestasi.</span></h1>
-        <p class="mackvshero-description">
-          Wadah aspirasi, kreativitas, dan kolaborasi siswa
-          <strong>Santa Laurensia Suvarna Sutera</strong>.
-        </p>
-        <a class="mackvsbutton mackvsbutton-yellow" href="#visi-misi">Kenali OSIS Kami <span>↓</span></a>
+      <div class="mackvscontainer mackvshero-content mackvscard-hero-wrapper">
+        <div class="mackvscard-hero-text">
+          <p class="mackvseyebrow">Organisasi Siswa Intra Sekolah</p>
+          <h1>Bersama Membangun<br><span>Generasi Berprestasi.</span></h1>
+          <p class="mackvshero-description">
+            Wadah aspirasi, kreativitas, dan kolaborasi siswa
+            <strong>Santa Laurensia Suvarna Sutera</strong>.
+          </p>
+          <a class="mackvsbutton mackvsbutton-yellow" href="#visi-misi">Kenali OSIS Kami <span>↓</span></a>
+        </div>
+
+        <div class="mackvscard mackvslogin-card-inline">
+          <img class="mackvslogo" alt="Logo Santa Laurensia" src="../images/logo.png">
+          <h2>Masuk ke akun Anda</h2>
+          <p class="mackvssub">Gunakan username dan password sekolah.</p>
+
+          <form action="#" method="POST">
+            <div class="mackvsfield">
+              <label for="mackvsusername">Username</label>
+              <input type="text" id="mackvsusername" name="username">
+            </div>
+            <div class="mackvsfield">
+              <label for="mackvspassword">Password</label>
+              <div class="mackvspw">
+                <input type="password" id="mackvspassword" name="password">
+              </div>
+            </div>
+            <div class="mackvsrow">
+              <label><input type="checkbox" name="remember"> Ingat saya</label>
+              <a href="#">Lupa password?</a>
+            </div>
+
+            <button type="submit" class="mackvsbuttonlogin">Masuk</button>
+          </form>
+        </div>
       </div>
       <div class="mackvshero-decoration" aria-hidden="true"></div>
     </section>
