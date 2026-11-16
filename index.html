@@ -22,15 +22,21 @@
         <li><a href="#visi-misi">Visi &amp; Misi</a></li>
         <li><a href="#anggota">Anggota</a></li>
         <li><a href="#galeri">Galeri</a></li>
-        <li><a href="html/mozes_cv.html">CV Mozes</a></li>
-        <li><a href="html/kyra_cv.html">CV Kyra</a></li>
+        <li class="mozeskyradropdown">
+          <input type="checkbox" id="mozeskyradropdown-toggle-input" class="mozeskyradropdown-checkbox">
+          <label for="mozeskyradropdown-toggle-input" class="mozeskyradropdown-toggle">Cv ▾</label>
+          <ul class="mozeskyradropdown-menu">
+            <li><a href="html/mozes_cv.html"><span>Mozes</span> <span class="mozeskyra-arrow">›</span></a></li>
+            <li><a href="html/kyra_cv.html"><span>Kyra</span> <span class="mozeskyra-arrow">›</span></a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="mozes-kyra-hero" id="beranda">
-      <div class="mozes-kyra-container mozes-kyra-hero-content mozes-kyra-card-hero-wrapper">
+      <div class="mozes-kyra-container mozes-kyra-hero-content">
         <div class="mozes-kyra-card-hero-text">
           <p class="mozes-kyra-eyebrow">Organisasi Siswa Intra Sekolah</p>
           <h1>Bersama Membangun<br><span>Generasi Berprestasi.</span></h1>
@@ -40,6 +46,7 @@
           </p>
           <a class="mozes-kyra-button mozes-kyra-button-yellow" href="#visi-misi">Kenali OSIS Kami <span>↓</span></a>
         </div>
+      </div>
       <div class="mozes-kyra-hero-decoration" aria-hidden="true"></div>
     </section>
 
@@ -87,18 +94,13 @@
 
           <div class="mozes-kyra-advisor-members">
             <div class="mozes-kyra-advisor-member">
-              <img src="../images/pembimbing-1.jpg" alt="Alvin Wijaya">
-            <div class="MK-advisor-member">
               <img src="images/alvin-wijaya.jpeg" alt="Alvin Wijaya">
               <p>Alvin Wijaya</p>
             </div>
             <div class="mozes-kyra-advisor-member">
-              <img src="../images/pembimbing-2.jpg" alt="Sinta Novia Sari">
-            <div class="MK-advisor-member">
               <img src="images/sinta-novia-sari.jpe" alt="Sinta Novia Sari">
               <p>Sinta Novia Sari</p>
             </div>
-
           </div>
 
         </div>
@@ -121,9 +123,9 @@
             </div>
           </article>
 
-          <article class="MK-leader-card">
+          <article class="mozes-kyra-leader-card">
             <img src="images/alycia.jpg" alt="Alycia Sandra Wibowo">
-            <div class="MK-leader-info">
+            <div class="mozes-kyra-leader-info">
               <span>Koordinator SMA<br />Bendahara</span>
               <h3>Alycia Sandra Wibowo</h3>
             </div>
@@ -322,7 +324,7 @@
           <div class="mozes-kyra-former-member-members">
 
             <div class="mozes-kyra-former-member">
-              <img src="../images/mantan-anggota.jpg" alt="Wayne Nicholas">
+              <img src="images/mantan-anggota.jpg" alt="Wayne Nicholas">
 
               <span class="mozes-kyra-member-role">KETUA OSIS</span>
 
