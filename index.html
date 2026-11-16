@@ -23,10 +23,11 @@
         <li><a href="#anggota">Anggota</a></li>
         <li><a href="#galeri">Galeri</a></li>
         <li class="mozes-kyra-dropdown">
-          <a href="#" class="mozes-kyra-dropdown-toggle">CV ▾</a>
-          <ul class="mozes-kyra-dropdown-menu">
-            <li><a href="html/mozes_cv.html">Mozes</a></li>
-            <li><a href="html/kyra_cv.html">Kyra</a></li>
+          <input type="checkbox" id="mozes-kyra-dropdown-toggle-input" class="mozes-kyra-dropdown-checkbox">
+          <label for="mozes-kyra-dropdown-toggle-input" class="mozes-kyra-dropdown-toggle">Cv ▾</label>
+          <ul class="mozes-kyradropdown-menu">
+            <li><a href="html/mozes_cv.html"><span>Mozes</span> <span class="mozes-kyra-arrow">›</span></a></li>
+            <li><a href="html/kyra_cv.html"><span>Kyra</span> <span class="mozes-kyra-arrow">›</span></a></li>
           </ul>
         </li>
       </ul>
@@ -45,32 +46,6 @@
           </p>
           <a class="mozes-kyra-button mozes-kyra-button-yellow" href="#visi-misi">Kenali OSIS Kami <span>↓</span></a>
         </div>
-
-        <div class="mozes-kyra-card mozes-kyra-login-card-inline">
-          <img class="mozes-kyra-logo" alt="Logo Santa Laurensia" src="images/logo.png">
-          <h2>Masuk ke akun Anda</h2>
-          <p class="mozes-kyra-sub">Gunakan username dan password sekolah.</p>
-
-          <form action="#" method="POST">
-            <div class="mozes-kyra-field">
-              <label for="mozes-kyra-username">Username</label>
-              <input type="text" id="mozes-kyra-username" name="username">
-            </div>
-            <div class="mozes-kyra-field">
-              <label for="mozes-kyra-password">Password</label>
-              <div class="mozes-kyra-pw">
-                <input type="password" id="mozes-kyra-password" name="password">
-              </div>
-            </div>
-            <div class="mozes-kyra-row">
-              <label><input type="checkbox" name="remember"> Ingat saya</label>
-              <a href="#">Lupa password?</a>
-            </div>
-
-            <a href="html/mozes_cv.html" class="mozes-kyra-login">Masuk</a>
-          </form>
-        </div>
-      </div>
       <div class="mozes-kyra-hero-decoration" aria-hidden="true"></div>
     </section>
 
