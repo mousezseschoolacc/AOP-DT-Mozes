@@ -35,7 +35,7 @@ body {
 
 
 
-.mackvssidebar {
+.MK-sidebar {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -47,13 +47,13 @@ body {
   background: var(--sidebar);
 }
 
-.mackvsphoto-link:hover .mackvscircular-image {
+.MK-photo-link:hover .MK-circular-image {
   transform: scale(1.04);
   transition: transform 0.2s ease;
 }
 
 
-.mackvscircular-image {
+.MK-circular-image {
   align-self: center;
   position: relative;
   z-index: 2;
@@ -66,19 +66,19 @@ body {
 }
 
 
-.mackvsprofile-container {
+.MK-profile-container {
   position: relative;
   align-self: center;
   margin-bottom: 10px;
 }
 
-.mackvsphoto-link {
+.MK-photo-link {
   display: block;
   line-height: 0;
 }
 
-.mackvsproject-button,
-.mackvsproject-button:visited {
+.MK-project-button,
+.MK-project-button:visited {
   position: absolute;
   left: 50%;
   bottom: -14px;
@@ -99,34 +99,34 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.mackvsproject-button:hover {
+.MK-project-button:hover {
   background: var(--accent);
   color: var(--paper);
 }
 
-.mackvssidebar-logo {
+.MK-sidebar-logo {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.mackvscontact-item {
+.MK-contact-item {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-.mackvscontact-item img {
+.MK-contact-item img {
   flex-shrink: 0;
   width: 25px;
   height: 25px;
 }
 
-.mackvscontact-item p {
+.MK-contact-item p {
   margin: 0;
 }
 
-.mackvssidebar h3 {
+.MK-sidebar h3 {
   margin: 0 0 10px;
   padding-bottom: 7px;
   border-bottom: 2px solid var(--teal);
@@ -136,28 +136,28 @@ body {
   text-transform: uppercase;
 }
 
-.mackvssidebar p,
-.mackvssidebar ul {
+.MK-sidebar p,
+.MK-sidebar ul {
   margin: 6px 0;
   color: var(--muted);
   font-size: 0.92rem;
 }
 
-.mackvssidebar ul {
+.MK-sidebar ul {
   padding-left: 18px;
 }
 
-.mackvssidebar li::marker {
+.MK-sidebar li::marker {
   color: var(--teal);
 }
 
 
-.mackvsmain {
+.MK-main {
   min-width: 0;
   padding: 0 0 24px;
 }
 
-.mackvsmain h3 {
+.MK-main h3 {
   margin: 34px 0 14px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--pop);
@@ -169,12 +169,12 @@ body {
 
 
 
-.mackvsheader-block {
+.MK-header-block {
   position: relative;
   margin: calc(var(--page-padding) * -1) calc(var(--page-padding) * -1) 0 0;
 }
 
-.mackvsheader-block::before {
+.MK-header-block::before {
   content: "";
   position: absolute;
   top: 0;
@@ -184,7 +184,7 @@ body {
   background: var(--accent);
 }
 
-.mackvsmain .mackvsbar {
+.MK-main .MK-bar {
   display: block;
   margin: 0;
   padding: 8px 16px;
@@ -192,7 +192,7 @@ body {
   color: #fff;
 }
 
-.mackvsmain .mackvsbar-tag {
+.MK-main .MK-bar-tag {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -200,14 +200,14 @@ body {
   color: var(--pop);
 }
 
-.mackvsmain .mackvsbar-name {
+.MK-main .MK-bar-name {
   padding-top: 4px;
   padding-bottom: 4px;
   font-size: 2rem;
   line-height: 1.15;
 }
 
-.mackvsmain .mackvsbar-title {
+.MK-main .MK-bar-title {
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--soft-yellow);
@@ -215,13 +215,13 @@ body {
 
 
 
-.mackvsmain .mackvstimeline {
+.MK-main .MK-timeline {
   position: relative;
   margin: 20px 0 20px 14px;
   padding-left: 30px;
 }
 
-.mackvsmain .mackvstimeline::before {
+.MK-main .MK-timeline::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -231,7 +231,7 @@ body {
   background: var(--ink);
 }
 
-.mackvsmain .mackvstimeline-item {
+.MK-main .MK-timeline-item {
   position: relative;
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
@@ -239,7 +239,7 @@ body {
   margin-bottom: 28px;
 }
 
-.mackvsmain .mackvstimeline-item::before {
+.MK-main .MK-timeline-item::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -253,16 +253,16 @@ body {
   background: var(--paper);
 }
 
-.mackvsmain .mackvstimeline-date {
+.MK-main .MK-timeline-date {
   font-size: 0.92rem;
   color: var(--muted);
 }
 
-.mackvsmain .mackvstimeline-content {
+.MK-main .MK-timeline-content {
   min-width: 0;
 }
 
-.mackvsmain .mackvstimeline-content p {
+.MK-main .MK-timeline-content p {
   margin: 0 0 6px;
 }
 
@@ -270,7 +270,7 @@ body {
 
 
 @media (max-width: 720px) {
-  .mackvsmain .mackvstimeline-item {
+  .MK-main .MK-timeline-item {
     grid-template-columns: 1fr;
     gap: 4px;
   }

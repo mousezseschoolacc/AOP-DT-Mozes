@@ -34,7 +34,7 @@ a:hover, a:focus {
   color: #82998f;
 }
 
-.mackvscv-page {
+.MK-cv-page {
   width: min(1120px, max-content);
   margin: 0 auto;
   overflow: hidden;
@@ -42,7 +42,7 @@ a:hover, a:focus {
   box-shadow: 0 12px 35px rgb(35 27 24 / 15%);
 }
 
-.mackvstopbar {
+.MK-topbar {
   min-height: 66px;
   padding: 16px 30px;
   display: flex;
@@ -54,37 +54,37 @@ a:hover, a:focus {
   letter-spacing: 0.13em;
 }
 
-.mackvstopbar-name {
+.MK-topbar-name {
   font-size: clamp(1rem, 2vw, 1.35rem);
   font-weight: 800;
 }
 
-.mackvstopbar-role {
+.MK-topbar-role {
   font-size: 0.72rem;
   font-weight: 700;
   opacity: 0.85;
 }
 
-.mackvscv-layout {
+.MK-cv-layout {
   display: grid;
   grid-template-columns: 32% 68%;
   min-height: 1120px;
 }
 
-.mackvssidebar {
+.MK-sidebar {
   padding: 34px 25px 38px;
   color: var(--header-text);
   background: var(--sidebar-bg);
   border-right: 2px solid var(--border);
 }
 
-.mackvsprofile-container {
+.MK-profile-container {
   position: relative;
   margin: 0 auto 34px;
   container-type: inline-size;
 }
 
-.mackvsprofile-photo {
+.MK-profile-photo {
   position: relative;
   width: min(220px, 82%);
   aspect-ratio: 1 / 1;
@@ -94,14 +94,14 @@ a:hover, a:focus {
   margin: 0 auto;
 }
 
-.mackvsprofile-photo img {
+.MK-profile-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.mackvsphoto-head {
+.MK-photo-head {
   position: absolute;
   top: 21%;
   left: 37%;
@@ -111,7 +111,7 @@ a:hover, a:focus {
   border-radius: 50%;
 }
 
-.mackvsphoto-shoulders {
+.MK-photo-shoulders {
   position: absolute;
   left: 14%;
   bottom: -17%;
@@ -121,8 +121,8 @@ a:hover, a:focus {
   border-radius: 50% 50% 0 0;
 }
 
-.mackvsproject-button,
-.mackvsproject-button:visited {
+.MK-project-button,
+.MK-project-button:visited {
   position: absolute;
   display: block;
   width: max-content;
@@ -141,18 +141,18 @@ a:hover, a:focus {
   left: 50%;
 }
 
-.mackvsproject-button:hover,
-.mackvsproject-button:focus {
+.MK-project-button:hover,
+.MK-project-button:focus {
   background: var(--sidebar-bg);
   text-decoration: none;
   color: var(--hero-bg);
 }
 
-.mackvsside-section {
+.MK-side-section {
   margin-top: 25px;
 }
 
-.mackvsside-section h2 {
+.MK-side-section h2 {
   padding: 10px 12px 0px;
   margin-bottom: 0px;
   color: var(--hero-bg);
@@ -161,7 +161,7 @@ a:hover, a:focus {
   letter-spacing: 0.025em;
 }
 
-.mackvsside-section h3 {
+.MK-side-section h3 {
   padding: 0px 12px;
   color: var(--hero-bg);
   font-size: 0.9rem;
@@ -172,7 +172,7 @@ a:hover, a:focus {
   opacity: 80%;
 }
 
-.mackvsside-section .mackvstext {
+.MK-side-section .MK-text {
   padding: 0px 12px;
   color: var(--panel-text);
   opacity: 95%;
@@ -180,34 +180,34 @@ a:hover, a:focus {
   letter-spacing: 0.025em;
 }
 
-.mackvsblank-lines {
+.MK-blank-lines {
   display: grid;
   gap: 12px;
   padding: 4px 8px 8px;
 }
 
-.mackvsblank-lines span {
+.MK-blank-lines span {
   display: block;
   width: 86%;
   min-height: 8px;
   border-bottom: 1px solid rgb(253 238 237 / 27%);
 }
 
-.mackvslanguages .mackvsblank-lines span {
+.MK-languages .MK-blank-lines span {
   width: 70%;
 }
 
-.mackvscertifications {
+.MK-certifications {
   margin-top: 30px;
 }
 
-.mackvsmain-content {
+.MK-main-content {
   min-width: 0;
   padding: 25px 26px 34px;
   background: var(--hero-bg);
 }
 
-.mackvshero {
+.MK-hero {
   padding: 25px 27px 20px;
   margin-bottom: 22px;
   background: var(--hero-bg);
@@ -215,7 +215,7 @@ a:hover, a:focus {
   border-radius: 15px;
 }
 
-.mackvseyebrow {
+.MK-eyebrow {
   margin: 0 0 7px;
   color: var(--panel);
   font-size: 0.68rem;
@@ -223,30 +223,30 @@ a:hover, a:focus {
   letter-spacing: 0.16em;
 }
 
-.mackvsh1 {
+.MK-h1 {
   font-family: 'Manrope', sans-serif;
 }
 
-.mackvshero h1 {
+.MK-hero h1 {
   margin: 0;
   color: var(--sidebar-bg);
   font-size: clamp(1.7rem, 3.5vw, 2.5rem);
   line-height: 1.1;
 }
 
-.mackvshero-subtitle {
+.MK-hero-subtitle {
   min-height: 8px;
   margin: 8px 0 12px;
 }
 
-.mackvscontact-grid {
+.MK-contact-grid {
   display: grid;
   grid-template-columns: 35fr 30fr 35fr;
   gap: 12px;
   margin-top: 20px;
 }
 
-.mackvscontact-item {
+.MK-contact-item {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -255,14 +255,14 @@ a:hover, a:focus {
   overflow-wrap: anywhere;
 }
 
-.mackvscontact-icon {
+.MK-contact-icon {
   width: 21px;
   height: 21px;
   flex-shrink: 0;
   color: var(--sidebar-bg);
 }
 
-.mackvssocial-row {
+.MK-social-row {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -274,21 +274,21 @@ a:hover, a:focus {
   font-weight: 700;
 }
 
-.mackvssocial-divider {
+.MK-social-divider {
   width: 1px;
   height: 17px;
   background: var(--border);
   opacity: 0.5;
 }
 
-.mackvssocials {
+.MK-socials {
   display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px 8px;
 }
 
-.mackvsmain-section {
+.MK-main-section {
   margin-top: 17px;
   overflow: hidden;
   color: var(--panel-text);
@@ -297,7 +297,7 @@ a:hover, a:focus {
   border-radius: 13px;
 }
 
-.mackvsmain-section h2 {
+.MK-main-section h2 {
   margin: 0;
   padding: 13px 18px;
   color: var(--panel-text);
@@ -307,36 +307,36 @@ a:hover, a:focus {
   background: linear-gradient(var(--panel-text), var(--panel-text)) bottom / calc(100% - 36px) 1px no-repeat;
 }
 
-.mackvssection-body { 
+.MK-section-body { 
   min-height: 64px;
   padding: 14px 20px 15px;
 }
 
-.mackvseducation .mackvssection-body {
+.MK-education .MK-section-body {
   min-height: 175px;
 }
 
-.mackvssummary .mackvssection-body {
+.MK-summary .MK-section-body {
   text-align: justify;
 }
 
-.mackvsactivities .mackvssection-body {
+.MK-activities .MK-section-body {
   text-align: justify;
 }
 
-.mackvsactivities ul {
+.MK-activities ul {
   margin-block: 0px;
   margin-inline: 0px;
   padding-inline-start: inherit;
 }
 
-.mackvstimeline {
+.MK-timeline {
   position: relative;
   padding: 15px 20px 15px 35px;
   margin: 14px 20px;
 }
 
-.mackvstimeline::before {
+.MK-timeline::before {
   content: "";
   position: absolute;
   top: 0;
@@ -346,12 +346,12 @@ a:hover, a:focus {
   background: var(--panel-text);
 }
 
-.mackvstimeline-entry {
+.MK-timeline-entry {
   position: relative;
   padding: 0 0 10px 20px;
 }
 
-.mackvstimeline-entry::before {
+.MK-timeline-entry::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -361,7 +361,7 @@ a:hover, a:focus {
   background: var(--panel-text);
 }
 
-.mackvstimeline-entry::after {
+.MK-timeline-entry::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -373,53 +373,53 @@ a:hover, a:focus {
   transform: translate(160%, 33%);
 }
 
-.mackvstimeline-entry:last-child {
+.MK-timeline-entry:last-child {
   padding-bottom: 0;
 }
 
-.mackvstimeline-content strong {
+.MK-timeline-content strong {
   font-size: 1rem;
   font-weight: 800;
 }
 
-.mackvstimeline-content p {
+.MK-timeline-content p {
   margin: 5px 0 0;
   font-size: 0.95rem;
 }
 
-.mackvsactivities .mackvssection-body {
+.MK-activities .MK-section-body {
   min-height: 130px;
 }
 
-.mackvssection-body.mackvsblank-lines span {
+.MK-section-body.MK-blank-lines span {
   border-bottom-color: rgb(235 184 136 / 30%);
 }
 
-.mackvsworks {
+.MK-works {
   margin-top: 28px;
 }
 
-.mackvssection-hint {
+.MK-section-hint {
   margin: 10px 18px 13px;
   color: rgb(235 184 136 / 75%);
   font-size: 0.82rem;
   font-style: italic;
 }
 
-.mackvswork-grid {
+.MK-work-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   padding: 18px;
 }
 
-.mackvswork-placeholder {
+.MK-work-placeholder {
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1.5px solid rgb(235 184 136 / 55%);
 }
 
-.mackvswork-placeholder img {
+.MK-work-placeholder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -430,45 +430,45 @@ a:hover, a:focus {
     padding: 12px;
   }
 
-  .mackvstopbar {
+  .MK-topbar {
     align-items: flex-start;
     flex-direction: column;
     gap: 6px;
     padding: 16px 20px;
   }
 
-  .mackvscv-layout {
+  .MK-cv-layout {
     grid-template-columns: 1fr;
   }
 
-  .mackvssidebar {
+  .MK-sidebar {
     border-right: 0;
     border-bottom: 2px solid var(--border);
     padding: 25px 22px 30px;
   }
 
-  .mackvsprofile-photo {
+  .MK-profile-photo {
     width: 165px;
     margin-bottom: 25px;
   }
 
-  .mackvsmain-content {
+  .MK-main-content {
     padding: 18px;
   }
 }
 
 @media (max-width: 460px) {
-  .mackvscontact-grid {
+  .MK-contact-grid {
     grid-template-columns: 1fr;
     gap: 8px;
   }
 
-  .mackvswork-grid {
+  .MK-work-grid {
     gap: 10px;
     padding-inline: 12px;
   }
 
-.mackvswork-placeholder {
+.MK-work-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,7 +477,7 @@ a:hover, a:focus {
   border: 1.5px solid rgb(235 184 136 / 55%);
 }
 
-.mackvswork-placeholder img {
+.MK-work-placeholder img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -485,30 +485,30 @@ a:hover, a:focus {
   height: auto;
 }
 
-.mackvswork-grid {
+.MK-work-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-  .mackvshero {
+  .MK-hero {
     padding: 20px;
   }
 }
 
-.mackvswork-grid {
+.MK-work-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 12px !important;
   align-items: start !important;
 }
 
-.mackvswork-placeholder {
+.MK-work-placeholder {
   height: auto !important;
   min-height: 0 !important;
   aspect-ratio: auto !important;
   border: 1.5px solid rgb(235 184 136 / 55%);
 }
 
-.mackvswork-placeholder img {
+.MK-work-placeholder img {
   display: block !important;
   width: 100% !important;
   height: 90px !important;
