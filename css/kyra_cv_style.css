@@ -35,7 +35,7 @@ body {
 
 
 
-.MK-sidebar {
+.kyra-sidebar {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -47,13 +47,13 @@ body {
   background: var(--sidebar);
 }
 
-.MK-photo-link:hover .MK-circular-image {
+.kyra-photo-link:hover .kyra-circular-image {
   transform: scale(1.04);
   transition: transform 0.2s ease;
 }
 
 
-.MK-circular-image {
+.kyra-circular-image {
   align-self: center;
   position: relative;
   z-index: 2;
@@ -66,19 +66,19 @@ body {
 }
 
 
-.MK-profile-container {
+.kyra-profile-container {
   position: relative;
   align-self: center;
   margin-bottom: 10px;
 }
 
-.MK-photo-link {
+.kyra-photo-link {
   display: block;
   line-height: 0;
 }
 
-.MK-project-button,
-.MK-project-button:visited {
+.kyra-project-button,
+.kyra-project-button:visited {
   position: absolute;
   left: 50%;
   bottom: -14px;
@@ -99,34 +99,34 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.MK-project-button:hover {
+.kyra-project-button:hover {
   background: var(--accent);
   color: var(--paper);
 }
 
-.MK-sidebar-logo {
+.kyra-sidebar-logo {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.MK-contact-item {
+.kyra-contact-item {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
-.MK-contact-item img {
+.kyra-contact-item img {
   flex-shrink: 0;
   width: 25px;
   height: 25px;
 }
 
-.MK-contact-item p {
+.kyra-contact-item p {
   margin: 0;
 }
 
-.MK-sidebar h3 {
+.kyra-sidebar h3 {
   margin: 0 0 10px;
   padding-bottom: 7px;
   border-bottom: 2px solid var(--teal);
@@ -136,28 +136,28 @@ body {
   text-transform: uppercase;
 }
 
-.MK-sidebar p,
-.MK-sidebar ul {
+.kyra-sidebar p,
+.kyra-sidebar ul {
   margin: 6px 0;
   color: var(--muted);
   font-size: 0.92rem;
 }
 
-.MK-sidebar ul {
+.kyra-sidebar ul {
   padding-left: 18px;
 }
 
-.MK-sidebar li::marker {
+.kyra-sidebar li::marker {
   color: var(--teal);
 }
 
 
-.MK-main {
+.kyra-main {
   min-width: 0;
   padding: 0 0 24px;
 }
 
-.MK-main h3 {
+.kyra-main h3 {
   margin: 34px 0 14px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--pop);
@@ -169,12 +169,12 @@ body {
 
 
 
-.MK-header-block {
+.kyra-header-block {
   position: relative;
   margin: calc(var(--page-padding) * -1) calc(var(--page-padding) * -1) 0 0;
 }
 
-.MK-header-block::before {
+.kyra-header-block::before {
   content: "";
   position: absolute;
   top: 0;
@@ -184,7 +184,7 @@ body {
   background: var(--accent);
 }
 
-.MK-main .MK-bar {
+.kyra-main .kyra-bar {
   display: block;
   margin: 0;
   padding: 8px 16px;
@@ -192,7 +192,7 @@ body {
   color: #fff;
 }
 
-.MK-main .MK-bar-tag {
+.kyra-main .kyra-bar-tag {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -200,14 +200,14 @@ body {
   color: var(--pop);
 }
 
-.MK-main .MK-bar-name {
+.kyra-main .kyra-bar-name {
   padding-top: 4px;
   padding-bottom: 4px;
   font-size: 2rem;
   line-height: 1.15;
 }
 
-.MK-main .MK-bar-title {
+.kyra-main .kyra-bar-title {
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--soft-yellow);
@@ -215,13 +215,13 @@ body {
 
 
 
-.MK-main .MK-timeline {
+.kyra-main .kyra-timeline {
   position: relative;
   margin: 20px 0 20px 14px;
   padding-left: 30px;
 }
 
-.MK-main .MK-timeline::before {
+.kyra-main .kyra-timeline::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -231,7 +231,7 @@ body {
   background: var(--ink);
 }
 
-.MK-main .MK-timeline-item {
+.kyra-main .kyra-timeline-item {
   position: relative;
   display: grid;
   grid-template-columns: 160px minmax(0, 1fr);
@@ -239,7 +239,7 @@ body {
   margin-bottom: 28px;
 }
 
-.MK-main .MK-timeline-item::before {
+.kyra-main .kyra-timeline-item::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -253,16 +253,16 @@ body {
   background: var(--paper);
 }
 
-.MK-main .MK-timeline-date {
+.kyra-main .kyra-timeline-date {
   font-size: 0.92rem;
   color: var(--muted);
 }
 
-.MK-main .MK-timeline-content {
+.kyra-main .kyra-timeline-content {
   min-width: 0;
 }
 
-.MK-main .MK-timeline-content p {
+.kyra-main .kyra-timeline-content p {
   margin: 0 0 6px;
 }
 
@@ -270,7 +270,7 @@ body {
 
 
 @media (max-width: 720px) {
-  .MK-main .MK-timeline-item {
+  .kyra-main .kyra-timeline-item {
     grid-template-columns: 1fr;
     gap: 4px;
   }

@@ -38,12 +38,12 @@ a {
   text-decoration: none;
 }
 
-.MK-container {
+.mozes-kyra-container {
   width: min(1120px, calc(100% - 40px));
   margin-inline: auto;
 }
 
-.MK-site-header {
+.mozes-kyra-site-header {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -51,7 +51,7 @@ a {
   box-shadow: 0 3px 18px rgba(20, 35, 80, 0.07);
 }
 
-.MK-navbar {
+.mozes-kyra-navbar {
   min-height: 76px;
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ a {
   gap: 24px;
 }
 
-.MK-brand {
+.mozes-kyra-brand {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -69,7 +69,7 @@ a {
   line-height: 1.2;
 }
 
-.MK-brand small {
+.mozes-kyra-brand small {
   display: block;
   margin-top: 4px;
   color: var(--muted);
@@ -77,31 +77,31 @@ a {
   font-weight: 600;
 }
 
-.MK-brand-logo {
+.mozes-kyra-brand-logo {
   width: 44px;
   height: 44px;
   object-fit: contain;
 }
 
-.MK-nav-links {
+.mozes-kyra-nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
   list-style: none;
 }
 
-.MK-nav-links a {
+.mozes-kyra-nav-links a {
   color: var(--text);
   font-size: 0.92rem;
   font-weight: 650;
   transition: color 0.2s ease;
 }
 
-.MK-nav-links a:hover {
+.mozes-kyra-nav-links a:hover {
   color: var(--blue);
 }
 
-.MK-nav-toggle {
+.mozes-kyra-nav-toggle {
   display: none;
   border: 0;
   background: transparent;
@@ -110,7 +110,7 @@ a {
   cursor: pointer;
 }
 
-.MK-hero {
+.mozes-kyra-hero {
   position: relative;
   overflow: hidden;
   min-height: 530px;
@@ -120,13 +120,13 @@ a {
   background: var(--blue);
 }
 
-.MK-hero-content {
+.mozes-kyra-hero-content {
   position: relative;
   z-index: 2;
   padding-block: 90px;
 }
 
-.MK-eyebrow {
+.mozes-kyra-eyebrow {
   color: var(--blue);
   font-size: 0.78rem;
   font-weight: 800;
@@ -134,11 +134,11 @@ a {
   text-transform: uppercase;
 }
 
-.MK-hero .MK-eyebrow {
+.mozes-kyra-hero .mozes-kyra-eyebrow {
   color: var(--yellow);
 }
 
-.MK-hero h1 {
+.mozes-kyra-hero h1 {
   max-width: 760px;
   margin: 16px 0;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -146,18 +146,18 @@ a {
   letter-spacing: -0.04em;
 }
 
-.MK-hero h1 span {
+.mozes-kyra-hero h1 span {
   color: var(--yellow);
 }
 
-.MK-hero-description {
+.mozes-kyra-hero-description {
   max-width: 560px;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 1.08rem;
 }
 
-.MK-button {
+.mozes-kyra-button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -167,17 +167,17 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.MK-button:hover {
+.mozes-kyra-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.MK-button-yellow {
+.mozes-kyra-button-yellow {
   color: var(--blue-dark);
   background: var(--yellow);
 }
 
-.MK-hero-decoration {
+.mozes-kyra-hero-decoration {
   position: absolute;
   right: -130px;
   bottom: -220px;
@@ -187,7 +187,7 @@ a {
   border-radius: 50%;
 }
 
-.MK-section-blue .MK-hero-decoration {
+.mozes-kyra-section-blue .mozes-kyra-hero-decoration {
   top: -220px;
   left: -220px;
   right: auto;
@@ -195,51 +195,51 @@ a {
   pointer-events: none;
 }
 
-.MK-section-blue .MK-container {
+.mozes-kyra-section-blue .mozes-kyra-container {
   position: relative;
   z-index: 2;
 }
 
-.MK-section {
+.mozes-kyra-section {
   padding-block: 90px;
 }
 
-.MK-section-blue {
+.mozes-kyra-section-blue {
   background-color: var(--blue);
   position: relative;
   overflow: hidden;
 }
 
-.MK-section-heading {
+.mozes-kyra-section-heading {
   max-width: 650px;
   margin: 0 auto 44px;
   text-align: center;
 }
 
-.MK-section-heading h2 {
+.mozes-kyra-section-heading h2 {
   margin: 8px 0 12px;
   color: var(--blue);
   font-size: clamp(2rem, 4vw, 2.8rem);
   letter-spacing: -0.035em;
 }
 
-.MK-section-heading>p:last-child {
+.mozes-kyra-section-heading>p:last-child {
   color: var(--muted);
 }
 
-.MK-section-heading-light h2 {
+.mozes-kyra-section-heading-light h2 {
   color: var(--white);
 }
 
-.MK-section-heading-light>p:last-child {
+.mozes-kyra-section-heading-light>p:last-child {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.MK-section-heading-light .MK-eyebrow {
+.mozes-kyra-section-heading-light .mozes-kyra-eyebrow {
   color: var(--yellow);
 }
 
-.MK-vision-card {
+.mozes-kyra-vision-card {
   padding: 38px;
   border-radius: var(--radius);
   color: var(--white);
@@ -248,7 +248,7 @@ a {
   box-shadow: var(--shadow);
 }
 
-.MK-card-label {
+.mozes-kyra-card-label {
   display: inline-block;
   margin-bottom: 12px;
   padding: 5px 50px;
@@ -260,15 +260,15 @@ a {
   letter-spacing: 0.1em;
 }
 
-.MK-vision-card h4 {
+.mozes-kyra-vision-card h4 {
   font-size: clamp(1.35rem, 1.2vw, 2rem);
 }
 
-.MK-vision-card p {
+.mozes-kyra-vision-card p {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.MK-mission-heading h2 {
+.mozes-kyra-mission-heading h2 {
   margin: 22px 0 0;
   color: var(--blue);
   font-size: 1.7rem;
@@ -276,14 +276,14 @@ a {
   text-align: center;
 }
 
-.MK-mission-grid {
+.mozes-kyra-mission-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 22px;
 }
 
-.MK-mission-card {
+.mozes-kyra-mission-card {
   padding: 26px;
   border: 1px solid #e7ebf7;
   border-radius: var(--radius);
@@ -291,28 +291,28 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.MK-mission-card:hover {
+.mozes-kyra-mission-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow);
 }
 
-.MK-mission-number {
+.mozes-kyra-mission-number {
   display: inline-block;
   color: var(--blue);
   font-size: 2rem;
   font-weight: 900;
 }
 
-.MK-mission-card h3 {
+.mozes-kyra-mission-card h3 {
   margin-bottom: 8px;
   color: var(--blue);
 }
 
-.MK-mission-card p {
+.mozes-kyra-mission-card p {
   color: var(--muted);
 }
 
-.MK-advisor-card {
+.mozes-kyra-advisor-card {
   width: min(400px, 100%);
   margin: 0 auto 24px;
   padding: 28px;
@@ -322,7 +322,7 @@ a {
   text-align: center;
 }
 
-.MK-advisor-card h3 {
+.mozes-kyra-advisor-card h3 {
   margin-bottom: 22px;
   padding-bottom: 12px;
   border-bottom: 3px solid var(--yellow);
@@ -330,18 +330,18 @@ a {
   font-size: 1.2rem;
 }
 
-.MK-advisor-members {
+.mozes-kyra-advisor-members {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.MK-advisor-member {
+.mozes-kyra-advisor-member {
   min-width: 0;
   text-align: center;
 }
 
-.MK-advisor-member img {
+.mozes-kyra-advisor-member img {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
@@ -351,7 +351,7 @@ a {
   background: var(--soft-blue);
 }
 
-.MK-advisor-member p {
+.mozes-kyra-advisor-member p {
   margin-top: 9px;
   color: var(--text);
   font-size: 0.9rem;
@@ -359,7 +359,7 @@ a {
   overflow-wrap: anywhere;
 }
 
-.MK-leadership-grid {
+.mozes-kyra-leadership-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -367,7 +367,7 @@ a {
   margin: 0 auto 24px;
 }
 
-.MK-leader-card {
+.mozes-kyra-leader-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,11 +381,11 @@ a {
   transition: transform 0.2s ease;
 }
 
-.MK-leader-card:hover {
+.mozes-kyra-leader-card:hover {
   transform: translateY(-5px);
 }
 
-.MK-leader-card img {
+.mozes-kyra-leader-card img {
   width: 45%;
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
@@ -394,7 +394,7 @@ a {
   background: var(--soft-blue);
 }
 
-.MK-leader-info span {
+.mozes-kyra-leader-info span {
   text-transform: uppercase;
   margin: 10px auto 5px;
   font-size: 0.7rem;
@@ -404,29 +404,29 @@ a {
   line-height: 1.2em;
 }
 
-.MK-leader-info h3 {
+.mozes-kyra-leader-info h3 {
   margin: 5px 0;
   color: var(--text);
   font-size: 1.1rem;
 }
 
-.MK-leader-info p {
+.mozes-kyra-leader-info p {
   color: var(--muted);
   font-size: 0.9rem;
 }
 
-.MK-division-grid {
+.mozes-kyra-division-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 24px;
 }
 
-.MK-division-grid.MK-small {
+.mozes-kyra-division-grid.mozes-kyra-small {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.MK-division-card {
+.mozes-kyra-division-card {
   padding: 28px;
   border-radius: 24px;
   background: var(--white);
@@ -435,19 +435,19 @@ a {
     box-shadow 0.2s ease;
 }
 
-.MK-division-card:hover {
+.mozes-kyra-division-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
 }
 
-.MK-division-card h3 {
+.mozes-kyra-division-card h3 {
   color: var(--blue);
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 3px;
 }
 
-.MK-division-description {
+.mozes-kyra-division-description {
   color: var(--muted);
   border-bottom: 3px solid var(--yellow);
   text-align: center;
@@ -456,22 +456,22 @@ a {
   font-size: 0.9rem;
 }
 
-.MK-division-members {
+.mozes-kyra-division-members {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 14px;
 }
 
-.MK-division-members.MK-small {
+.mozes-kyra-division-members.mozes-kyra-small {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.MK-division-member {
+.mozes-kyra-division-member {
   min-width: 0;
   text-align: center;
 }
 
-.MK-division-member img {
+.mozes-kyra-division-member img {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 14px;
@@ -480,20 +480,20 @@ a {
   transition: transform 0.25s ease;
 }
 
-.MK-leader-card img,
-.MK-advisor-member img,
-.MK-former-member img {
+.mozes-kyra-leader-card img,
+.mozes-kyra-advisor-member img,
+.mozes-kyra-former-member img {
   transition: transform 0.25s ease;
 }
 
-.MK-division-member img:hover,
-.MK-leader-card img:hover,
-.MK-advisor-member img:hover,
-.MK-former-member img:hover {
+.mozes-kyra-division-member img:hover,
+.mozes-kyra-leader-card img:hover,
+.mozes-kyra-advisor-member img:hover,
+.mozes-kyra-former-member img:hover {
   transform: scale(1.05);
 }
 
-.MK-division-member .MK-member {
+.mozes-kyra-division-member .mozes-kyra-member {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -506,7 +506,7 @@ a {
   letter-spacing: 0.08em;
 }
 
-.MK-division-member .MK-leader {
+.mozes-kyra-division-member .mozes-kyra-leader {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -519,7 +519,7 @@ a {
   background: var(--yellow);
 }
 
-.MK-division-member p {
+.mozes-kyra-division-member p {
   margin-top: 0;
   color: var(--text);
   font-size: 0.9rem;
@@ -527,7 +527,7 @@ a {
   overflow-wrap: anywhere;
 }
 
-.MK-former-member-card {
+.mozes-kyra-former-member-card {
   width: min(300px, 100%);
   margin: 0 auto 40px;
   padding: 28px;
@@ -537,24 +537,24 @@ a {
   text-align: center;
 }
 
-.MK-former-member-card h3 {
+.mozes-kyra-former-member-card h3 {
   margin-bottom: 3px;
   color: var(--blue);
   font-size: 1.2rem;
 }
 
-.MK-former-member-members {
+.mozes-kyra-former-member-members {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.MK-former-member {
+.mozes-kyra-former-member {
   min-width: 0;
   text-align: center;
 }
 
-.MK-former-member img {
+.mozes-kyra-former-member img {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
@@ -564,7 +564,7 @@ a {
   background: var(--soft-blue);
 }
 
-.MK-former-member .MK-member-role {
+.mozes-kyra-former-member .mozes-kyra-member-role {
   display: block;
   width: fit-content;
   margin: 10px auto 5px;
@@ -577,7 +577,7 @@ a {
   letter-spacing: 0.08em;
 }
 
-.MK-former-member p {
+.mozes-kyra-former-member p {
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 700;
@@ -585,63 +585,63 @@ a {
 }
 
 @media (max-width: 900px) {
-  .MK-leadership-grid {
+  .mozes-kyra-leadership-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .MK-division-members {
+  .mozes-kyra-division-members {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
-  .MK-leadership-grid {
+  .mozes-kyra-leadership-grid {
     grid-template-columns: 1fr;
     gap: 14px;
     margin-bottom: 32px;
   }
 
-  .MK-leader-card {
+  .mozes-kyra-leader-card {
     padding: 16px;
   }
 
-  .MK-leader-card img {
+  .mozes-kyra-leader-card img {
     width: 90px;
     height: 90px;
   }
 
-  .MK-division-grid {
+  .mozes-kyra-division-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .MK-division-card {
+  .mozes-kyra-division-card {
     padding: 22px;
   }
 
-  .MK-division-members {
+  .mozes-kyra-division-members {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .MK-division-members.MK-small {
+  .mozes-kyra-division-members.mozes-kyra-small {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.MK-gallery-grid {
+.mozes-kyra-gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.MK-gallery-item {
+.mozes-kyra-gallery-item {
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--white);
   box-shadow: var(--shadow);
 }
 
-.MK-gallery-item img {
+.mozes-kyra-gallery-item img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -649,81 +649,81 @@ a {
   transition: transform 0.35s ease;
 }
 
-.MK-gallery-item:hover img {
+.mozes-kyra-gallery-item:hover img {
   transform: scale(1.04);
 }
 
-.MK-gallery-item figcaption {
+.mozes-kyra-gallery-item figcaption {
   display: flex;
   flex-direction: column;
   gap: 3px;
   padding: 16px 18px;
 }
 
-.MK-gallery-item figcaption span {
+.mozes-kyra-gallery-item figcaption span {
   color: var(--blue);
   font-weight: 800;
 }
 
-.MK-gallery-item figcaption small {
+.mozes-kyra-gallery-item figcaption small {
   color: var(--muted);
 }
 
-.MK-site-footer {
+.mozes-kyra-site-footer {
   padding-block: 36px;
   color: var(--white);
   background: var(--blue-dark);
 }
 
-.MK-footer-content {
+.mozes-kyra-footer-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
 }
 
-.MK-site-footer h2 {
+.mozes-kyra-site-footer h2 {
   color: var(--yellow);
   font-size: 1.1rem;
 }
 
-.MK-site-footer p {
+.mozes-kyra-site-footer p {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.9rem;
 }
 
-.MK-copyright {
+.mozes-kyra-copyright {
   text-align: right;
 }
 
 @media (max-width: 900px) {
-  .MK-members-grid {
+  .mozes-kyra-members-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .MK-gallery-grid {
+  .mozes-kyra-gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .MK-mission-grid {
+  .mozes-kyra-mission-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 640px) {
-  .MK-container {
+  .mozes-kyra-container {
     width: min(100% - 28px, 1120px);
   }
 
-  .MK-navbar {
+  .mozes-kyra-navbar {
     min-height: 68px;
   }
 
-  .MK-nav-toggle {
+  .mozes-kyra-nav-toggle {
     display: block;
   }
 
-  .MK-nav-links {
+  .mozes-kyra-nav-links {
     position: absolute;
     top: 68px;
     left: 0;
@@ -737,67 +737,67 @@ a {
     box-shadow: 0 12px 18px rgba(20, 35, 80, 0.08);
   }
 
-  .MK-nav-links.MK-open {
+  .mozes-kyra-nav-links.mozes-kyra-open {
     display: flex;
   }
 
-  .MK-nav-links a {
+  .mozes-kyra-nav-links a {
     display: block;
     padding: 12px 4px;
   }
 
-  .MK-hero {
+  .mozes-kyra-hero {
     min-height: 470px;
   }
 
-  .MK-hero-content {
+  .mozes-kyra-hero-content {
     padding-block: 70px;
   }
 
-  .MK-hero-decoration {
+  .mozes-kyra-hero-decoration {
     right: -260px;
     bottom: -280px;
   }
 
-  .MK-section {
+  .mozes-kyra-section {
     padding-block: 64px;
   }
 
-  .MK-vision-card {
+  .mozes-kyra-vision-card {
     padding: 28px 20px;
   }
 
-  .MK-members-grid,
-  .MK-gallery-grid {
+  .mozes-kyra-members-grid,
+  .mozes-kyra-gallery-grid {
     grid-template-columns: 1fr;
   }
 
-  .MK-member-photo {
+  .mozes-kyra-member-photo {
     aspect-ratio: 5 / 4;
   }
 
-  .MK-footer-content {
+  .mozes-kyra-footer-content {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .MK-copyright {
+  .mozes-kyra-copyright {
     text-align: left;
   }
 }
 
-.MK-card-hero-wrapper {
+.mozes-kyra-card-hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
 
-.MK-card-hero-text {
+.mozes-kyra-card-hero-text {
   flex: 1;
 }
 
-.MK-login-card-inline {
+.mozes-kyra-login-card-inline {
   width: 100%;
   max-width: 380px;
   background: var(--white);
@@ -810,7 +810,7 @@ a {
   z-index: 3;
 }
 
-.MK-login-card-inline .MK-logo {
+.mozes-kyra-login-card-inline .mozes-kyra-logo {
   display: block;
   width: 80px;
   height: 80px;
@@ -818,7 +818,7 @@ a {
   margin: 0 auto 12px;
 }
 
-.MK-login-card-inline h2 {
+.mozes-kyra-login-card-inline h2 {
   font-size: 1.25rem;
   text-align: center;
   color: var(--blue-dark);
@@ -826,14 +826,14 @@ a {
   margin-bottom: 4px;
 }
 
-.MK-login-card-inline .MK-sub {
+.mozes-kyra-login-card-inline .mozes-kyra-sub {
   text-align: center;
   color: var(--muted);
   font-size: .85rem;
   margin-bottom: 20px;
 }
 
-.MK-login-card-inline label {
+.mozes-kyra-login-card-inline label {
   display: block;
   font-size: .85rem;
   font-weight: 600;
@@ -841,12 +841,12 @@ a {
   color: var(--text);
 }
 
-.MK-field {
+.mozes-kyra-field {
   margin-bottom: 14px;
 }
 
-.MK-login-card-inline input[type="text"],
-.MK-login-card-inline input[type="password"] {
+.mozes-kyra-login-card-inline input[type="text"],
+.mozes-kyra-login-card-inline input[type="password"] {
   width: 100%;
   padding: 10px 12px;
   font-size: 0.95rem;
@@ -856,12 +856,12 @@ a {
   background: #fff;
 }
 
-.MK-login-card-inline input:focus {
+.mozes-kyra-login-card-inline input:focus {
   outline: 3px solid rgba(255, 203, 12, .45);
   border-color: var(--yellow);
 }
 
-.MK-row {
+.mozes-kyra-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -869,7 +869,7 @@ a {
   margin: 4px 0 18px;
 }
 
-.MK-row label {
+.mozes-kyra-row label {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -877,28 +877,28 @@ a {
   margin: 0;
 }
 
-.MK-row a {
+.mozes-kyra-row a {
   color: var(--blue);
   text-decoration: none;
 }
 
-.MK-row a:hover {
+.mozes-kyra-row a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 900px) {
-  .MK-card-hero-wrapper {
+  .mozes-kyra-card-hero-wrapper {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .MK-login-card-inline {
+  .mozes-kyra-login-card-inline {
     max-width: 100%;
     margin-top: 20px;
   }
 }
 
-a.MK-login {
+a.mozes-kyra-login {
   display: inline-block;
   width: 100%;
   padding: 12px;
@@ -914,6 +914,6 @@ a.MK-login {
   text-decoration: none;
 }
 
-a.MK-login:hover {
+a.mozes-kyra-login:hover {
   background: var(--blue-dark);
 }

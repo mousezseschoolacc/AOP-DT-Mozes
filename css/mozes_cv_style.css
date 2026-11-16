@@ -34,7 +34,7 @@ a:hover, a:focus {
   color: #82998f;
 }
 
-.MK-cv-page {
+.mozes-cv-page {
   width: min(1120px, max-content);
   margin: 0 auto;
   overflow: hidden;
@@ -42,7 +42,7 @@ a:hover, a:focus {
   box-shadow: 0 12px 35px rgb(35 27 24 / 15%);
 }
 
-.MK-topbar {
+.mozes-topbar {
   min-height: 66px;
   padding: 16px 30px;
   display: flex;
@@ -54,37 +54,37 @@ a:hover, a:focus {
   letter-spacing: 0.13em;
 }
 
-.MK-topbar-name {
+.mozes-topbar-name {
   font-size: clamp(1rem, 2vw, 1.35rem);
   font-weight: 800;
 }
 
-.MK-topbar-role {
+.mozes-topbar-role {
   font-size: 0.72rem;
   font-weight: 700;
   opacity: 0.85;
 }
 
-.MK-cv-layout {
+.mozes-cv-layout {
   display: grid;
   grid-template-columns: 32% 68%;
   min-height: 1120px;
 }
 
-.MK-sidebar {
+.mozes-sidebar {
   padding: 34px 25px 38px;
   color: var(--header-text);
   background: var(--sidebar-bg);
   border-right: 2px solid var(--border);
 }
 
-.MK-profile-container {
+.mozes-profile-container {
   position: relative;
   margin: 0 auto 34px;
   container-type: inline-size;
 }
 
-.MK-profile-photo {
+.mozes-profile-photo {
   position: relative;
   width: min(220px, 82%);
   aspect-ratio: 1 / 1;
@@ -94,14 +94,14 @@ a:hover, a:focus {
   margin: 0 auto;
 }
 
-.MK-profile-photo img {
+.mozes-profile-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.MK-photo-head {
+.mozes-photo-head {
   position: absolute;
   top: 21%;
   left: 37%;
@@ -111,7 +111,7 @@ a:hover, a:focus {
   border-radius: 50%;
 }
 
-.MK-photo-shoulders {
+.mozes-photo-shoulders {
   position: absolute;
   left: 14%;
   bottom: -17%;
@@ -121,8 +121,8 @@ a:hover, a:focus {
   border-radius: 50% 50% 0 0;
 }
 
-.MK-project-button,
-.MK-project-button:visited {
+.mozes-project-button,
+.mozes-project-button:visited {
   position: absolute;
   display: block;
   width: max-content;
@@ -141,18 +141,18 @@ a:hover, a:focus {
   left: 50%;
 }
 
-.MK-project-button:hover,
-.MK-project-button:focus {
+.mozes-project-button:hover,
+.mozes-project-button:focus {
   background: var(--sidebar-bg);
   text-decoration: none;
   color: var(--hero-bg);
 }
 
-.MK-side-section {
+.mozes-side-section {
   margin-top: 25px;
 }
 
-.MK-side-section h2 {
+.mozes-side-section h2 {
   padding: 10px 12px 0px;
   margin-bottom: 0px;
   color: var(--hero-bg);
@@ -161,7 +161,7 @@ a:hover, a:focus {
   letter-spacing: 0.025em;
 }
 
-.MK-side-section h3 {
+.mozes-side-section h3 {
   padding: 0px 12px;
   color: var(--hero-bg);
   font-size: 0.9rem;
@@ -172,7 +172,7 @@ a:hover, a:focus {
   opacity: 80%;
 }
 
-.MK-side-section .MK-text {
+.mozes-side-section .mozes-text {
   padding: 0px 12px;
   color: var(--panel-text);
   opacity: 95%;
@@ -180,34 +180,34 @@ a:hover, a:focus {
   letter-spacing: 0.025em;
 }
 
-.MK-blank-lines {
+.mozes-blank-lines {
   display: grid;
   gap: 12px;
   padding: 4px 8px 8px;
 }
 
-.MK-blank-lines span {
+.mozes-blank-lines span {
   display: block;
   width: 86%;
   min-height: 8px;
   border-bottom: 1px solid rgb(253 238 237 / 27%);
 }
 
-.MK-languages .MK-blank-lines span {
+.mozes-languages .mozes-blank-lines span {
   width: 70%;
 }
 
-.MK-certifications {
+.mozes-certifications {
   margin-top: 30px;
 }
 
-.MK-main-content {
+.mozes-main-content {
   min-width: 0;
   padding: 25px 26px 34px;
   background: var(--hero-bg);
 }
 
-.MK-hero {
+.mozes-hero {
   padding: 25px 27px 20px;
   margin-bottom: 22px;
   background: var(--hero-bg);
@@ -215,7 +215,7 @@ a:hover, a:focus {
   border-radius: 15px;
 }
 
-.MK-eyebrow {
+.mozes-eyebrow {
   margin: 0 0 7px;
   color: var(--panel);
   font-size: 0.68rem;
@@ -223,30 +223,30 @@ a:hover, a:focus {
   letter-spacing: 0.16em;
 }
 
-.MK-h1 {
+.mozes-h1 {
   font-family: 'Manrope', sans-serif;
 }
 
-.MK-hero h1 {
+.mozes-hero h1 {
   margin: 0;
   color: var(--sidebar-bg);
   font-size: clamp(1.7rem, 3.5vw, 2.5rem);
   line-height: 1.1;
 }
 
-.MK-hero-subtitle {
+.mozes-hero-subtitle {
   min-height: 8px;
   margin: 8px 0 12px;
 }
 
-.MK-contact-grid {
+.mozes-contact-grid {
   display: grid;
   grid-template-columns: 35fr 30fr 35fr;
   gap: 12px;
   margin-top: 20px;
 }
 
-.MK-contact-item {
+.mozes-contact-item {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -255,14 +255,14 @@ a:hover, a:focus {
   overflow-wrap: anywhere;
 }
 
-.MK-contact-icon {
+.mozes-contact-icon {
   width: 21px;
   height: 21px;
   flex-shrink: 0;
   color: var(--sidebar-bg);
 }
 
-.MK-social-row {
+.mozes-social-row {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -274,21 +274,21 @@ a:hover, a:focus {
   font-weight: 700;
 }
 
-.MK-social-divider {
+.mozes-social-divider {
   width: 1px;
   height: 17px;
   background: var(--border);
   opacity: 0.5;
 }
 
-.MK-socials {
+.mozes-socials {
   display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px 8px;
 }
 
-.MK-main-section {
+.mozes-main-section {
   margin-top: 17px;
   overflow: hidden;
   color: var(--panel-text);
@@ -297,7 +297,7 @@ a:hover, a:focus {
   border-radius: 13px;
 }
 
-.MK-main-section h2 {
+.mozes-main-section h2 {
   margin: 0;
   padding: 13px 18px;
   color: var(--panel-text);
@@ -307,36 +307,36 @@ a:hover, a:focus {
   background: linear-gradient(var(--panel-text), var(--panel-text)) bottom / calc(100% - 36px) 1px no-repeat;
 }
 
-.MK-section-body { 
+.mozes-section-body { 
   min-height: 64px;
   padding: 14px 20px 15px;
 }
 
-.MK-education .MK-section-body {
+.mozes-education .mozes-section-body {
   min-height: 175px;
 }
 
-.MK-summary .MK-section-body {
+.mozes-summary .mozes-section-body {
   text-align: justify;
 }
 
-.MK-activities .MK-section-body {
+.mozes-activities .mozes-section-body {
   text-align: justify;
 }
 
-.MK-activities ul {
+.mozes-activities ul {
   margin-block: 0px;
   margin-inline: 0px;
   padding-inline-start: inherit;
 }
 
-.MK-timeline {
+.mozes-timeline {
   position: relative;
   padding: 15px 20px 15px 35px;
   margin: 14px 20px;
 }
 
-.MK-timeline::before {
+.mozes-timeline::before {
   content: "";
   position: absolute;
   top: 0;
@@ -346,12 +346,12 @@ a:hover, a:focus {
   background: var(--panel-text);
 }
 
-.MK-timeline-entry {
+.mozes-timeline-entry {
   position: relative;
   padding: 0 0 10px 20px;
 }
 
-.MK-timeline-entry::before {
+.mozes-timeline-entry::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -361,7 +361,7 @@ a:hover, a:focus {
   background: var(--panel-text);
 }
 
-.MK-timeline-entry::after {
+.mozes-timeline-entry::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -373,53 +373,53 @@ a:hover, a:focus {
   transform: translate(160%, 33%);
 }
 
-.MK-timeline-entry:last-child {
+.mozes-timeline-entry:last-child {
   padding-bottom: 0;
 }
 
-.MK-timeline-content strong {
+.mozes-timeline-content strong {
   font-size: 1rem;
   font-weight: 800;
 }
 
-.MK-timeline-content p {
+.mozes-timeline-content p {
   margin: 5px 0 0;
   font-size: 0.95rem;
 }
 
-.MK-activities .MK-section-body {
+.mozes-activities .mozes-section-body {
   min-height: 130px;
 }
 
-.MK-section-body.MK-blank-lines span {
+.mozes-section-body.mozes-blank-lines span {
   border-bottom-color: rgb(235 184 136 / 30%);
 }
 
-.MK-works {
+.mozes-works {
   margin-top: 28px;
 }
 
-.MK-section-hint {
+.mozes-section-hint {
   margin: 10px 18px 13px;
   color: rgb(235 184 136 / 75%);
   font-size: 0.82rem;
   font-style: italic;
 }
 
-.MK-work-grid {
+.mozes-work-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   padding: 18px;
 }
 
-.MK-work-placeholder {
+.mozes-work-placeholder {
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 1.5px solid rgb(235 184 136 / 55%);
 }
 
-.MK-work-placeholder img {
+.mozes-work-placeholder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -430,45 +430,45 @@ a:hover, a:focus {
     padding: 12px;
   }
 
-  .MK-topbar {
+  .mozes-topbar {
     align-items: flex-start;
     flex-direction: column;
     gap: 6px;
     padding: 16px 20px;
   }
 
-  .MK-cv-layout {
+  .mozes-cv-layout {
     grid-template-columns: 1fr;
   }
 
-  .MK-sidebar {
+  .mozes-sidebar {
     border-right: 0;
     border-bottom: 2px solid var(--border);
     padding: 25px 22px 30px;
   }
 
-  .MK-profile-photo {
+  .mozes-profile-photo {
     width: 165px;
     margin-bottom: 25px;
   }
 
-  .MK-main-content {
+  .mozes-main-content {
     padding: 18px;
   }
 }
 
 @media (max-width: 460px) {
-  .MK-contact-grid {
+  .mozes-contact-grid {
     grid-template-columns: 1fr;
     gap: 8px;
   }
 
-  .MK-work-grid {
+  .mozes-work-grid {
     gap: 10px;
     padding-inline: 12px;
   }
 
-.MK-work-placeholder {
+.mozes-work-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,7 +477,7 @@ a:hover, a:focus {
   border: 1.5px solid rgb(235 184 136 / 55%);
 }
 
-.MK-work-placeholder img {
+.mozes-work-placeholder img {
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -485,30 +485,30 @@ a:hover, a:focus {
   height: auto;
 }
 
-.MK-work-grid {
+.mozes-work-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-  .MK-hero {
+  .mozes-hero {
     padding: 20px;
   }
 }
 
-.MK-work-grid {
+.mozes-work-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 12px !important;
   align-items: start !important;
 }
 
-.MK-work-placeholder {
+.mozes-work-placeholder {
   height: auto !important;
   min-height: 0 !important;
   aspect-ratio: auto !important;
   border: 1.5px solid rgb(235 184 136 / 55%);
 }
 
-.MK-work-placeholder img {
+.mozes-work-placeholder img {
   display: block !important;
   width: 100% !important;
   height: 90px !important;
