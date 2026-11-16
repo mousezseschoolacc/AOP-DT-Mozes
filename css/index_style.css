@@ -904,7 +904,7 @@ a.mackvslogin {
   padding: 12px;
   font-size: 1rem;
   font-weight: 700;
-  background: var(--navy);
+  background: var(--blue);
   color: #fff;
   border: 0;
   border-radius: 8px;
@@ -915,5 +915,5 @@ a.mackvslogin {
 }
 
 a.mackvslogin:hover {
-  background: #15307a;
+  background: var(--blue-dark);
 }
