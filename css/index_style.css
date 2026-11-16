@@ -1,83 +1,919 @@
-
-  :root{
-    --sky:#87CEEB;
-    --white:#ffffff;
-    --navy:#1c3a8a;
-    --gold:#f2b705;
-    --text:#1f2a44;
-    --muted:#5b6784;
-    --line:#cfd8ea;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{min-height:100%;background:linear-gradient(to bottom,var(--sky) 0%,var(--white) 100%) no-repeat;background-attachment:fixed}
-  body{
-    min-height:100vh;
-    display:flex;align-items:center;justify-content:center;
-    padding:24px;
-    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
-    color:var(--text);
-    background:transparent;
-  }
-  .card{
-    width:100%;max-width:400px;
-    background:var(--white);
-    border-radius:16px;
-    padding:32px 32px 28px;
-    box-shadow:0 12px 32px rgba(28,58,138,.18);
-    border-top:5px solid var(--gold);
-  }
-  .logo{display:block;width:112px;height:112px;object-fit:contain;margin:0 auto 14px}
-  h1{font-size:1.4rem;text-align:center;color:var(--navy);font-weight:700}
-  .sub{text-align:center;color:var(--muted);font-size:.92rem;margin:4px 0 24px}
-  label{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px}
-  .field{margin-bottom:16px}
-  input[type=text],input[type=password]{
-    width:100%;padding:11px 12px;font-size:1rem;
-    border:1px solid var(--line);border-radius:8px;color:var(--text);background:#fff;
-  }
-  input:focus{outline:3px solid rgba(242,183,5,.45);border-color:var(--gold)}
-  .pw{position:relative}
-  .pw input{padding-right:64px}
-  .toggle{
-    position:absolute;right:6px;top:50%;transform:translateY(-50%);
-    border:0;background:none;color:var(--navy);font-weight:600;font-size:.85rem;
-    padding:6px 8px;cursor:pointer;border-radius:6px;
-  }
-  .toggle:focus-visible{outline:3px solid rgba(242,183,5,.45)}
-  .row{display:flex;justify-content:space-between;align-items:center;font-size:.88rem;margin:4px 0 20px}
-  .row label{display:flex;align-items:center;gap:6px;font-weight:400;margin:0}
-  .row a{color:var(--navy);text-decoration:none}
-  .row a:hover{text-decoration:underline}
-  button.login{
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 700;
-    background: var(--navy);
-    color: #fff;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    transition: background .15s;
-  }
-  button.login:hover{background:#15307a}
-  button.login:focus-visible{outline:3px solid rgba(242,183,5,.6);outline-offset:2px}
-  .msg{min-height:1.2em;margin-top:12px;text-align:center;font-size:.88rem;color:#b3261e}
-
-  a.login {
-    display: inline-block;
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    font-weight: 700;
-    background: var(--navy);
-    color: #fff;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background .15s;
-    text-align: center;
-    text-decoration: none;
+:root {
+  --yellow: #ffcb0c;
+  --blue: #21409a;
+  --white: #ffffff;
+  --blue-dark: #172f75;
+  --text: #18213a;
+  --muted: #667085;
+  --soft-blue: #f2f5ff;
+  --radius: 18px;
+  --shadow: 0 12px 32px rgba(33, 64, 154, 0.10);
 }
 
-a.login:hover {background: #15307a;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mackvscontainer {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.mackvssite-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  box-shadow: 0 3px 18px rgba(20, 35, 80, 0.07);
+}
+
+.mackvsnavbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.mackvsbrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.mackvsbrand small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.mackvsbrand-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.mackvsnav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.mackvsnav-links a {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 650;
+  transition: color 0.2s ease;
+}
+
+.mackvsnav-links a:hover {
+  color: var(--blue);
+}
+
+.mackvsnav-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.mackvshero {
+  position: relative;
+  overflow: hidden;
+  min-height: 530px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background: var(--blue);
+}
+
+.mackvshero-content {
+  position: relative;
+  z-index: 2;
+  padding-block: 90px;
+}
+
+.mackvseyebrow {
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.mackvshero .mackvseyebrow {
+  color: var(--yellow);
+}
+
+.mackvshero h1 {
+  max-width: 760px;
+  margin: 16px 0;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.mackvshero h1 span {
+  color: var(--yellow);
+}
+
+.mackvshero-description {
+  max-width: 560px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.08rem;
+}
+
+.mackvsbutton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mackvsbutton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mackvsbutton-yellow {
+  color: var(--blue-dark);
+  background: var(--yellow);
+}
+
+.mackvshero-decoration {
+  position: absolute;
+  right: -130px;
+  bottom: -220px;
+  width: 560px;
+  height: 560px;
+  border: 90px solid rgba(255, 203, 12, 0.13);
+  border-radius: 50%;
+}
+
+.mackvssection-blue .mackvshero-decoration {
+  top: -220px;
+  left: -220px;
+  right: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+
+.mackvssection-blue .mackvscontainer {
+  position: relative;
+  z-index: 2;
+}
+
+.mackvssection {
+  padding-block: 90px;
+}
+
+.mackvssection-blue {
+  background-color: var(--blue);
+  position: relative;
+  overflow: hidden;
+}
+
+.mackvssection-heading {
+  max-width: 650px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.mackvssection-heading h2 {
+  margin: 8px 0 12px;
+  color: var(--blue);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  letter-spacing: -0.035em;
+}
+
+.mackvssection-heading>p:last-child {
+  color: var(--muted);
+}
+
+.mackvssection-heading-light h2 {
+  color: var(--white);
+}
+
+.mackvssection-heading-light>p:last-child {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.mackvssection-heading-light .mackvseyebrow {
+  color: var(--yellow);
+}
+
+.mackvsvision-card {
+  padding: 38px;
+  border-radius: var(--radius);
+  color: var(--white);
+  background: var(--blue);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.mackvscard-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 5px 50px;
+  border-radius: 999px;
+  color: var(--blue-dark);
+  background: var(--yellow);
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.mackvsvision-card h4 {
+  font-size: clamp(1.35rem, 1.2vw, 2rem);
+}
+
+.mackvsvision-card p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.mackvsmission-heading h2 {
+  margin: 22px 0 0;
+  color: var(--blue);
+  font-size: 1.7rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.mackvsmission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.mackvsmission-card {
+  padding: 26px;
+  border: 1px solid #e7ebf7;
+  border-radius: var(--radius);
+  background: var(--white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mackvsmission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.mackvsmission-number {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.mackvsmission-card h3 {
+  margin-bottom: 8px;
+  color: var(--blue);
+}
+
+.mackvsmission-card p {
+  color: var(--muted);
+}
+
+.mackvsadvisor-card {
+  width: min(400px, 100%);
+  margin: 0 auto 24px;
+  padding: 28px;
+  border-radius: 22px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.mackvsadvisor-card h3 {
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--yellow);
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+.mackvsadvisor-members {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.mackvsadvisor-member {
+  min-width: 0;
+  text-align: center;
+}
+
+.mackvsadvisor-member img {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 14px;
+  object-fit: cover;
+  background: var(--soft-blue);
+}
+
+.mackvsadvisor-member p {
+  margin-top: 9px;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.mackvsleadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 100%;
+  margin: 0 auto 24px;
+}
+
+.mackvsleader-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 22px 16px;
+  border-radius: 22px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.mackvsleader-card:hover {
+  transform: translateY(-5px);
+}
+
+.mackvsleader-card img {
+  width: 45%;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  border-radius: 16px;
+  object-fit: cover;
+  background: var(--soft-blue);
+}
+
+.mackvsleader-info span {
+  text-transform: uppercase;
+  margin: 10px auto 5px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--blue-dark);
+  line-height: 1.2em;
+}
+
+.mackvsleader-info h3 {
+  margin: 5px 0;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.mackvsleader-info p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.mackvsdivision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.mackvsdivision-grid.mackvssmall {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mackvsdivision-card {
+  padding: 28px;
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mackvsdivision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.mackvsdivision-card h3 {
+  color: var(--blue);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.mackvsdivision-description {
+  color: var(--muted);
+  border-bottom: 3px solid var(--yellow);
+  text-align: center;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+.mackvsdivision-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 14px;
+}
+
+.mackvsdivision-members.mackvssmall {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mackvsdivision-member {
+  min-width: 0;
+  text-align: center;
+}
+
+.mackvsdivision-member img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  object-fit: cover;
+  background: var(--soft-blue);
+  transition: transform 0.25s ease;
+}
+
+.mackvsleader-card img,
+.mackvsadvisor-member img,
+.mackvsformer-member img {
+  transition: transform 0.25s ease;
+}
+
+.mackvsdivision-member img:hover,
+.mackvsleader-card img:hover,
+.mackvsadvisor-member img:hover,
+.mackvsformer-member img:hover {
+  transform: scale(1.05);
+}
+
+.mackvsdivision-member .mackvsmember {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 5px;
+  padding: 3px 14px;
+  border-radius: 999px;
+  color: var(--blue);
+  background: #e9eefb;
+  font-size: 0.7cqi;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.mackvsdivision-member .mackvsleader {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 5px;
+  padding: 3px 14px;
+  border-radius: 999px;
+  font-size: 0.7cqi;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--blue-dark);
+  background: var(--yellow);
+}
+
+.mackvsdivision-member p {
+  margin-top: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.mackvsformer-member-card {
+  width: min(300px, 100%);
+  margin: 0 auto 40px;
+  padding: 28px;
+  border-radius: 22px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.mackvsformer-member-card h3 {
+  margin-bottom: 3px;
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+.mackvsformer-member-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.mackvsformer-member {
+  min-width: 0;
+  text-align: center;
+}
+
+.mackvsformer-member img {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 14px;
+  object-fit: cover;
+  background: var(--soft-blue);
+}
+
+.mackvsformer-member .mackvsmember-role {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 5px;
+  padding: 3px 14px;
+  border-radius: 999px;
+  color: var(--blue);
+  background: #e9eefb;
+  font-size: 0.7cqi;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.mackvsformer-member p {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .mackvsleadership-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mackvsdivision-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .mackvsleadership-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .mackvsleader-card {
+    padding: 16px;
+  }
+
+  .mackvsleader-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mackvsdivision-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mackvsdivision-card {
+    padding: 22px;
+  }
+
+  .mackvsdivision-members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mackvsdivision-members.mackvssmall {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.mackvsgallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mackvsgallery-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.mackvsgallery-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--soft-blue);
+  transition: transform 0.35s ease;
+}
+
+.mackvsgallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.mackvsgallery-item figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 16px 18px;
+}
+
+.mackvsgallery-item figcaption span {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.mackvsgallery-item figcaption small {
+  color: var(--muted);
+}
+
+.mackvssite-footer {
+  padding-block: 36px;
+  color: var(--white);
+  background: var(--blue-dark);
+}
+
+.mackvsfooter-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.mackvssite-footer h2 {
+  color: var(--yellow);
+  font-size: 1.1rem;
+}
+
+.mackvssite-footer p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+.mackvscopyright {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .mackvsmembers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mackvsgallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mackvsmission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .mackvscontainer {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .mackvsnavbar {
+    min-height: 68px;
+  }
+
+  .mackvsnav-toggle {
+    display: block;
+  }
+
+  .mackvsnav-links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 20px 18px;
+    background: var(--white);
+    box-shadow: 0 12px 18px rgba(20, 35, 80, 0.08);
+  }
+
+  .mackvsnav-links.mackvsopen {
+    display: flex;
+  }
+
+  .mackvsnav-links a {
+    display: block;
+    padding: 12px 4px;
+  }
+
+  .mackvshero {
+    min-height: 470px;
+  }
+
+  .mackvshero-content {
+    padding-block: 70px;
+  }
+
+  .mackvshero-decoration {
+    right: -260px;
+    bottom: -280px;
+  }
+
+  .mackvssection {
+    padding-block: 64px;
+  }
+
+  .mackvsvision-card {
+    padding: 28px 20px;
+  }
+
+  .mackvsmembers-grid,
+  .mackvsgallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mackvsmember-photo {
+    aspect-ratio: 5 / 4;
+  }
+
+  .mackvsfooter-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mackvscopyright {
+    text-align: left;
+  }
+}
+
+.mackvscard-hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mackvscard-hero-text {
+  flex: 1;
+}
+
+.mackvslogin-card-inline {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 32px rgba(28, 58, 138, .25);
+  border-top: 5px solid var(--yellow);
+  color: var(--text);
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.mackvslogin-card-inline .mackvslogo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 12px;
+}
+
+.mackvslogin-card-inline h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--blue-dark);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.mackvslogin-card-inline .mackvssub {
+  text-align: center;
+  color: var(--muted);
+  font-size: .85rem;
+  margin-bottom: 20px;
+}
+
+.mackvslogin-card-inline label {
+  display: block;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.mackvsfield {
+  margin-bottom: 14px;
+}
+
+.mackvslogin-card-inline input[type="text"],
+.mackvslogin-card-inline input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #cfd8ea;
+  border-radius: 8px;
+  color: var(--text);
+  background: #fff;
+}
+
+.mackvslogin-card-inline input:focus {
+  outline: 3px solid rgba(255, 203, 12, .45);
+  border-color: var(--yellow);
+}
+
+.mackvsrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .85rem;
+  margin: 4px 0 18px;
+}
+
+.mackvsrow label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.mackvsrow a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.mackvsrow a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .mackvscard-hero-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mackvslogin-card-inline {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+a.mackvslogin {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--navy);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .15s;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.mackvslogin:hover {
+  background: #15307a;
+}
